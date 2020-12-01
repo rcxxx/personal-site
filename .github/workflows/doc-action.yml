@@ -60,4 +60,4 @@ jobs:
           else
           npm i
           fi
-          GIT_USER=rcxxx yarn deploy
+          npx docusaurus deploy
