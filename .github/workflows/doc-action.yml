@@ -49,7 +49,7 @@ jobs:
       - name: Release to GitHub Pages
         env:
           USE_SSH: true
-          GIT_USER: git
+          GIT_USER: rcxxx
         run: |
           git config --global user.email "2689961909@qq.com"
           git config --global user.name "rcxxx"
@@ -60,4 +60,4 @@ jobs:
           else
           npm i
           fi
-          npx docusaurus deploy
+          GIT_USER=rcxxx yarn deploy
