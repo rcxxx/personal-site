@@ -1,5 +1,7 @@
 module.exports = {
-  someSidebar: {
-    Docusaurus: ['doc1', 'doc2', 'doc3'],
-  },
-};
+    someSidebar: {
+      关于: ['README'],
+      搭建知识库: ['about-build','about-deploy','about-write'],
+    },
+  };
+  
