@@ -27,6 +27,7 @@ module.exports = {
         },
       },
       navbar: {
+        hideOnScroll: true, // 自动隐藏导航栏
         title: "Rcxxx's Notes",
         logo: {
           alt: 'My Site Logo',
@@ -97,6 +98,10 @@ module.exports = {
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} RCXXX, Inc. Built with Docusaurus.`,
+      },
+      prism: {
+        theme: require('prism-react-renderer/themes/github'),
+        darkTheme: require('prism-react-renderer/themes/vsDark'),
       },
     },
     presets: [
