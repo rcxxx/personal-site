@@ -10,19 +10,22 @@ module.exports = {
       'cc/cc-generic-and-template',
       'cc/cc-generic-and-template-2',
       'cc/cc-11-new-standard',
+      'cc/cc-11-new-for',
       'cc/cc-auto-ptr',
     ], 
 
-    "Python": [
+    Python: [
 
     ], 
 
     数据结构: [
-      
+      'data-structures/data-structures-introduction',
+      'data-structures/data-structures-algorithm',
+      'data-structures/data-structures-algorithm-2',
     ], 
 
     OpenCV: [
-
+      'opencv/opencv-roi',
     ], 
 
     TensorFlow: [
