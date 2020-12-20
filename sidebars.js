@@ -40,6 +40,10 @@ module.exports = {
 
     ],
 
+    RoboMaster: [
+        'robomaster/rm-2018-buff-simulation',
+    ],
+
     搭建知识库: [
       'about-build',
       'about-deploy',
