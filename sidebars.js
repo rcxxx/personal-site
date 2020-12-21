@@ -33,7 +33,7 @@ module.exports = {
     ],
     
     PyTorch: [
-
+      'pytorch/pytorch-install',
     ],
 
     Matlab: [
