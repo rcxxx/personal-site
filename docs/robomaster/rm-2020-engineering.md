@@ -50,21 +50,69 @@ sidebar_label: RM2020工程视觉
 ```
 
 ## 代码实现
+:::info 看这里
+篇幅过长有些影响阅读体验，本文尽量只总结部分的处理，完整项目代码[看这边👉](https://github.com/rcxxx/engineering_vision)
+:::
+
 ### 对齐深度图像
 - 参考[官方示例程序](https://github.com/IntelRealSense/librealsense/tree/master/examples/align)
 
 Intel Realense D435相机可以直接获取到相对应的深度图像，需要先将获取到的深度图像与RGB图像进行对齐
 
 ``` cpp
+//  realsenseD435 拍摄到的帧
+frameset frames = pipe.wait_for_frames();
 
+//  获取RGB图
+//  对齐图像
+frameset aligned_set = align_to.process(frames);
+frame color_frames = aligned_set.get_color_frame();
+
+//  帧转化为Mat 尺寸为RGB帧的尺寸
+Mat color_img = Mat(Size(color_frames.as<video_frame>().get_width(),color_frames.as<video_frame>().get_height()), 
+        CV_8UC3,
+        (void*)color_frames.get_data(),
+        Mat::AUTO_STEP);
+
+cvtColor(color_img, color_img, COLOR_BGR2RGB);
+imshow("color_img", color_img);
+
+depth_frame depth_frames = aligned_set.get_depth_frame();
+// 从着色的深度数据中创建OpenCV Mat
+frame depth_frames_show = depth_frames.apply_filter(color_map);
+Mat depth_img = Mat(Size(depth_frames_show.as<video_frame>().get_width(),depth_frames_show.as<video_frame>().get_height()),
+        CV_8UC3,
+        (void*)depth_frames_show.get_data(),
+        Mat::AUTO_STEP);
+
+imshow("depth_img", depth_img);
 ```
+
+对其深度图像与RGB图像后效果如下
+
 
 ### 对应深度范围删除前景背景
 对齐图像之后可以很方便的获取每个像素的深度值，很容易就可以提取出弹药箱的位置，三维降二维
 
 ``` cpp
-
+Mat bin_img = Mat::zeros(color_img.rows, color_img.cols, CV_8UC1);
+		
+for (int i = 0; i < color_img.cols; ++i) {
+    for (int j = 0; j < color_img.rows; ++j) {
+        float distance = depth_frames.get_distance(i, j);
+        if (min_dist <= distance & distance <= max_dist) {
+            bin_img.at<uchar>(j, i) = 255;
+        }
+        else {
+            bin_img.at<uchar>(j, i) = 0;
+        }
+    }
+}
 ```
+
+将距离过近或过远的点删除后，效果如下
+
+
 
 ### 定位弹药箱
 弹药箱周围的前景与背景都删除掉之后，图象中还会留下1-3个弹药箱，可以使用最小包围矩形来完成弹药箱位置的选取
@@ -75,3 +123,6 @@ Intel Realense D435相机可以直接获取到相对应的深度图像，需要�
 
 ### 夹取策略
 
+
+
+### 最终效果

@@ -53,7 +53,7 @@ Anaconda能很方便的管理虚拟环境，解决各种依赖的冲突
 
 
 ``` bash
-conda creat -n pytorch-gpu python==3.8
+conda create -n pytorch-gpu python==3.8
 source activate pytorch-gpu
 conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch
 ```

@@ -54,29 +54,12 @@ sidebar_label: RM2019自瞄
 | Qt       | 5.12           |
 
 ## 代码实现
-### 相机驱动
-根据卖家所给文件和Demo，将相机部分功能做简易封装，留出常用接口，部分暂时没有需求的接口保持默认设置即可
 
-#### 设置分辨率
+:::info 看这里
+篇幅过长容易引起阅读不适，本文尽量只总结部分的处理，完整的项目代码可以参考这里👉
+:::
 
-```  cpp
-
-```
-
-#### 设置曝光时间
-
-``` cpp
-
-```
-
-#### 图像格式转换
-
-``` cpp
-
-```
-
-### 主要代码部分
-#### 预处理
+### 预处理
 两种思路
 - HSV
 
@@ -91,17 +74,53 @@ sidebar_label: RM2019自瞄
 ```
 
 - RGB
-通道相减的这种处理办法速度快，也比较稳定，最终确定这种处理式
+
+RGB通道相减的这种处理办法速度快，也比较稳定
+
+分离图像中的三个颜色通道
 
 ``` cpp
-
+vector<Mat> v_split;     //B G R
+split(src_img, v_split);
 ```
 
-#### 拟合装甲板矩形
+红蓝通道相减，再使用`threshold()`二值化
+
+``` cpp {2,3}
+subtract(_split[0], _split[2], bin_img_color);// b - r
+/* ----如果是红色情况则相反---- */
+// subtract(_split[2], _split[0], bin_img_color);// r - b
+threshold(bin_img_color, bin_img_color, ARMOR_COLOR_TH, 255, THRESH_BINARY);
+```
+
+对灰度图像进行二值化，提取出图像中高亮的部分
+
+``` cpp
+cvtColor(roi_img, gray_img, COLOR_BGR2GRAY);
+threshold(gray_img, bin_img_gray, ARMOR_GRAY_TH, 255, THRESH_BINARY);
+```
+
+对两个二值图进行 `与` 操作，提取同事满足颜色和高亮的部分，并存入bin_img中
+``` cpp
+bitwise_and(bin_img_color, bin_img_gray, bin_img);
+```
+
+基本已经能处理出图像中所有对应颜色的装甲板灯条，但是仍然会包括一些干扰项，后续拟合过程中再进行处理
+
+### 拟合装甲板矩形
 先将所有疑似灯条的部分都拟合为RotatedRect，筛选掉比例、角度不合适的灯条
 
 ``` cpp
+RotatedRect R_rect = fitEllipse(contours[idx]);
+float w_h_ratio = MIN(R_rect.size.width,R_rect.size.height) / MAX(R_rect.size.width,R_rect.size.height);
+```
 
+接下来就可以筛选矩形的形状，倾斜的角度等，筛选出较为合适的灯条，参数根据实际情况需要调整
+``` cpp
+if ((w_h_ratio < 0.4f)
+&& ((0<= R_rect.angle && R_rect.angle<=45)||(135<=R_rect.angle && R_rect.angle<=180))){
+    // code ...
+}
 ```
 
 每两个灯条之间都做匹配（成为组），筛选掉相距太远/太近
@@ -123,7 +142,4 @@ sidebar_label: RM2019自瞄
 ``` cpp
 
 ```
-#### 角度解算
-
-### 串口通讯
-为了方便之后的开发，讲串口通讯部分做了简易的封装，只留出了易用的收发接口，只需要根据通讯协议格式化通讯内容即可
+### 角度解算

@@ -36,12 +36,18 @@ module.exports = {
       'pytorch/pytorch-install',
     ],
 
+    ROS: [
+      'ros/ros-install',
+    ],
+
     Matlab: [
 
     ],
 
     RoboMaster: [
         'robomaster/rm-2018-buff-simulation',
+        //'robomaster/rm-2019-armor',
+        //'robomaster/rm-2020-engineering',
     ],
 
     搭建知识库: [
