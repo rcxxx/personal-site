@@ -25,6 +25,8 @@ module.exports = {
     ], 
 
     OpenCV: [
+      'opencv/opencv-install-01',
+      'opencv/opencv-install-02',
       'opencv/opencv-roi',
     ], 
 
