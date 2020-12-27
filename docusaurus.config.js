@@ -26,6 +26,7 @@ module.exports = {
           },
         },
       },
+      hideableSidebar: true,
       navbar: {
         hideOnScroll: true, // 自动隐藏导航栏
         title: "Rcxxx's Notes",
@@ -44,7 +45,7 @@ module.exports = {
           // {to: 'blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/rcxxx/docs',
-            label: 'GitHub',
+            label: '本站源码',
             position: 'right',
           },
         ],
