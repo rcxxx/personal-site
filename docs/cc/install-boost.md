@@ -1,7 +1,7 @@
 ---
-id: cc-boost
-title: C++标准库拓展boost库
-sidebar_label: boost
+id: cc-boost-install
+title: C++ 标准库拓展boost库
+sidebar_label: install
 ---
 
 boost库是为C++语言标准库提供扩展的一些C++程序库的总称

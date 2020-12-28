@@ -1,7 +1,7 @@
 ---
 id: opencv-roi
 title: 感兴趣区域——ROI
-sidebar_label: ROI
+sidebar_label: ROI操作
 ---
 ## ROI
 roi可以在图像中选定一个范围，从而只对图像的选定范围进行操作，而不影响到区域外的图像
