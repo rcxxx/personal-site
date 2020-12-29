@@ -112,3 +112,7 @@ import TabItem from '@theme/TabItem';
 - 简洁至上
 
 ### [将站点部署到Github](https://sinnammanyo.cn/WikiByRcxxx/docs/about-deploy)
+
+## 参考与致谢
+- [使用 Docusaurus 搭建个人博客](https://www.zxuqian.cn/deploy-a-docusaurus-site)
+

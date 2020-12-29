@@ -84,7 +84,7 @@ import TabItem from '@theme/TabItem';
 `url`              | GitHub页面的URL
 `baseUrl`          | 项目的基本URL，填 /projectName/
 
-:::tips
+:::tip
 这里 **`projectName`** 的储存库一般为 username.github.io，如果你有自己的域名，可以去仓库的 **`settings`** 里设置 **`GitHub Pages`** 的自定义域名，记得在自己的域名控制台添加一条解析规则
 :::
 
@@ -198,3 +198,6 @@ GIT_USER=<GITHUB_USERNAME> yarn deploy
 每当有新的内容被推送到 **master** 分支，将会自动构建并且部署到 **`gh-pages`**
 
 等待 **Git Action** 执行完毕，就可以在网页上看到你的站点了
+
+## 参考
+[Docusaurus 中文文档](https://www.docusaurus.cn/docs/deployment)
