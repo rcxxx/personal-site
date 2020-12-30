@@ -1,5 +1,5 @@
 ---
-id: opencv-install-02
+id: opencv-install-gpu
 title: OpenCV开发环境配置
 sidebar_label: Install（GPU）
 ---

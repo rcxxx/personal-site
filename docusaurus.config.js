@@ -1,11 +1,12 @@
 module.exports = {
-    title: 'Notes By RCXXX',
+    title: "Rcxxx's Notes",
     tagline: '个人学习笔记',
-    url: 'https://github.com/rcxxx/docs/',
-    baseUrl: '/docs/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
-    favicon: 'img/lzumi-icon-05-128x128.jpg',
+    favicon: 'img/lzumi-icon-05-128x128.jpg',    
+
+    url: 'https://github.com/rcxxx/docs/',
+    baseUrl: '/docs/',
     organizationName: 'rcxxx', // Usually your GitHub org/user name.
     projectName: 'docs', // Usually your repo name.
     themeConfig: {
@@ -29,7 +30,7 @@ module.exports = {
       hideableSidebar: true,
       navbar: {
         hideOnScroll: true, // 自动隐藏导航栏
-        title: "Rcxxx's Notes",
+        title: "Home",
         logo: {
           alt: 'My Site Logo',
           // src: 'img/logo.svg',
@@ -39,9 +40,52 @@ module.exports = {
           {
             to: 'docs/',
             activeBasePath: 'docs',
-            label: 'Docs',
+            label: 'Top',
             position: 'left',
           },
+
+          {
+            label: '💻',
+            position: 'left',
+            items: [
+              { label: 'C/C++', to: '/docs/docs/cc/cc-classes-and-objects'},
+              { label: 'Python', },
+              { label: '数据结构', to: '/docs/docs/data-structures/data-structures-introduction'},
+
+              
+            ],
+          },
+
+          {
+            label: '🧠AI',
+            position: 'left',
+            items: [
+              { label: 'opencv', to: '/docs/docs/opencv/opencv-install-cpu'},
+              { label: 'pytorch', to: '/docs/docs/pytorch/pytorch-install'},
+              { label: 'tensorflow', },
+              
+            ],
+          },
+
+          {
+            label: '👽robot',
+            position: 'left',
+            items: [
+              { label: 'ROS', to: '/docs/docs/ros/ros-install'},
+              { label: 'RoboMaster', to: '/docs/docs/robomaster/rm-2018-buff-simulation'},
+              { label: 'RoboCon', }
+              
+            ],
+          },
+
+          {
+            label: '🎮',
+            position: 'right',
+            items: [
+              { label: 'NO GAME NO LIFE',},              
+            ],
+          },
+          
           // {to: 'blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/rcxxx/docs',
@@ -53,36 +97,6 @@ module.exports = {
       footer: {
         style: 'dark',
         links: [
-          // {
-          //   title: 'Docs',
-          //   items: [
-          //     {
-          //       label: 'Style Guide',
-          //       to: 'docs/',
-          //     },
-          //     {
-          //       label: 'Second Doc',
-          //       to: 'docs/doc2/',
-          //     },
-          //   ],
-          // },
-          // {
-          //   title: 'Community',
-          //   items: [
-          //     {
-          //       label: 'Stack Overflow',
-          //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-          //     },
-          //     {
-          //       label: 'Discord',
-          //       href: 'https://discordapp.com/invite/docusaurus',
-          //     },
-          //     {
-          //       label: 'Twitter',
-          //       href: 'https://twitter.com/docusaurus',
-          //     },
-          //   ],
-          // },
           {
             title: 'More',
             items: [
@@ -98,7 +112,7 @@ module.exports = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} RCXXX, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} 🌈RCXXX. Built with Docusaurus.`,
       },
       prism: {
         theme: require('prism-react-renderer/themes/github'),
@@ -109,11 +123,13 @@ module.exports = {
       [
         '@docusaurus/preset-classic',
         {
+
           docs: {
             path: "./docs",
             routeBasePath: "/docs",
             sidebarPath: require.resolve('./sidebars.js'),
           },
+
           theme: {
             customCss: require.resolve('./src/css/custom.css'),
           },

@@ -115,6 +115,7 @@ GIT_USER=<GITHUB_USERNAME> yarn deploy
    - 这里不用默认名称是为了不与默认的全局**SSH key**冲突，具体问题参考[👉这里](https://www.jianshu.com/p/f7f4142a1556)
 
 2. 将生成的 **`id_rsa_action.pub`** 添加到你仓库的 **`settings -> Deploy keys`**
+   - 记得勾选 `Allow write access` ，不然会出现公钥只读的错误
 
 3. 将生成的 **`id_rsa_action`** 添加到你仓库的 **`settings -> Secrets`**
    - 将 **`Name`** 设置为 **`GH_PAGES_DEPLOY`**

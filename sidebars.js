@@ -1,6 +1,6 @@
 module.exports = {
   someSidebar: {
-    Home: [
+    关于: [
       'README'
     ],
     
@@ -80,8 +80,8 @@ module.exports = {
         label: "install",
         collapsed: true,
         items: [
-          'opencv/opencv-install-01',
-          'opencv/opencv-install-02',
+          'opencv/opencv-install-cpu',
+          'opencv/opencv-install-gpu',
         ],
       },
       
@@ -94,33 +94,35 @@ module.exports = {
         ],
       },
       
-    ], 
+    ],
 
     TensorFlow: [
 
     ],
     
     PyTorch: [
-      {
-        type: "category",
-        label: "install",
-        collapsed: true,
-        items: [
-          'pytorch/pytorch-install',
-        ],
-      },
+      'pytorch/pytorch-install',
+      // {
+      //   type: "category",
+      //   label: " ",
+      //   collapsed: true,
+      //   items: [
+        
+      //   ],
+      // },
 
     ],
 
     ROS: [
-      {
-        type: "category",
-        label: "install",
-        collapsed: true,
-        items: [
-          'ros/ros-install',
-        ],
-      },
+      'ros/ros-install',
+      // {
+      //   type: "category",
+      //   label: " ",
+      //   collapsed: true,
+      //   items: [
+          
+      //   ],
+      // },
 
     ],
 

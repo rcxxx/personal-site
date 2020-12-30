@@ -1,5 +1,5 @@
 ---
-id: opencv-install-01
+id: opencv-install-cpu
 title: OpenCV开发环境配置
 sidebar_label: Install（仅CPU）
 ---
