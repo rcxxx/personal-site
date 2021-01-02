@@ -115,26 +115,27 @@ module.exports = {
 
     ROS: [
       'ros/ros-install',
+      {
+        type: "category",
+        label: "入门",
+        collapsed: true,
+        items: [
+          'ros/ros-workspace-and-pkg',
+          'ros/ros-publisher',
+        ],
+      },
+
+    ],
+
+    Matlab: [
       // {
       //   type: "category",
-      //   label: " ",
+      //   label: "install",
       //   collapsed: true,
       //   items: [
           
       //   ],
       // },
-
-    ],
-
-    Matlab: [
-      {
-        type: "category",
-        label: "install",
-        collapsed: true,
-        items: [
-          
-        ],
-      },
     ],
 
     RoboMaster: [

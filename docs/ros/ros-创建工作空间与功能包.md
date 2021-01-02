@@ -80,5 +80,6 @@ catkin_make
 
 ``` bash
 source ~/catkin_ws/devel/setup.bash
+echo $ROS_PACKAGE_PATH
 ```
 
