@@ -4,8 +4,18 @@ title: ROS发布者 Publisher 的编程实现
 sidebar_label: Publisher
 ---
 
-## 什么是 Publisher（发布者）
+## 什么是发布者 （Publisher）
+发布 `publish` 是指将数据发布到某个话题中
 
+为了可以正常执行发布操作。发布者 `publisher` 必须在节点管理器上注册自己的话题等多种信息
+
+`publisher` 的工作过程如下
+
+1. 向节点管理器注册节点
+
+2. 告诉管理器要向哪个话题发布数据
+
+3. 节点运行时采集数据，然后发布到这个话题
 
 ## 如何实现一个 Publisher
 - 初始化 ROS 节点
@@ -112,10 +122,9 @@ cd ~/catkin_ws/
 roscore
 ```
 
-开启一个新的终端
+开启一个新的终端，启动小海龟仿真节点
 
 ``` bash
-cd ~/catkin_ws/
 rosrun turtlesim turtlesim_node
 ```
 
@@ -130,4 +139,5 @@ rosrun learning_topic velocity_publisher
 可以看到小海龟按照一定的角度与速度运动
 
 ## 参考
+- [ROS入门](https://blog.csdn.net/jiejiemcu/article/details/105349782)
 - [古月居的视频教程](https://www.bilibili.com/video/BV1zt411G7Vn?p=5)

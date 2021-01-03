@@ -83,3 +83,5 @@ source ~/catkin_ws/devel/setup.bash
 echo $ROS_PACKAGE_PATH
 ```
 
+## 参考
+- [古月居的视频教程](https://www.bilibili.com/video/BV1zt411G7Vn?p=5)

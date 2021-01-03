@@ -75,6 +75,7 @@ module.exports = {
     ], 
 
     OpenCV: [
+      'opencv/about-opencv',
       {
         type: "category",
         label: "install",
@@ -120,8 +121,10 @@ module.exports = {
         label: "入门",
         collapsed: true,
         items: [
+          'ros/ros-core-concepts',
           'ros/ros-workspace-and-pkg',
           'ros/ros-publisher',
+          'ros/ros-subscriber',
         ],
       },
 
@@ -138,10 +141,50 @@ module.exports = {
       // },
     ],
 
+    RoboCon: [
+      'robocon/about-rc',
+      {
+        type: "category",
+        label: "所努力的",
+        collapsed: true,
+        items: [
+
+        ],
+      },
+
+      {
+        type: "category",
+        label: "有趣的小插曲",
+        collapsed: true,
+        items: [
+          
+        ],
+      },
+        
+    ],
+
     RoboMaster: [
-        'robomaster/rm-2018-buff-simulation',
+      'robomaster/about-rm',
+      {
+        type: "category",
+        label: "所努力的",
+        collapsed: true,
+        items: [
+          'robomaster/rm-2018-buff-simulation',
         //'robomaster/rm-2019-armor',
         //'robomaster/rm-2020-engineering',
+        ],
+      },
+
+      {
+        type: "category",
+        label: "有趣的小插曲",
+        collapsed: true,
+        items: [
+
+        ],
+      },
+        
     ],
 
     搭建知识库: [

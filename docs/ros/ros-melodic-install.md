@@ -104,6 +104,6 @@ rosrun turtlesim turtle_teleop_key
 
 如果一切正常的话，ros就安装成功了
 
-## 参考链接
+## 参考
 - [ros官方wiki](http://wiki.ros.org/melodic/Installation/Ubuntu)
 - [古月居的视频教程](https://www.bilibili.com/video/BV1zt411G7Vn?p=5)

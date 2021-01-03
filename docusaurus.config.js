@@ -60,8 +60,8 @@ module.exports = {
             label: '🧠AI',
             position: 'left',
             items: [
-              { label: 'opencv', to: '/docs/docs/opencv/opencv-install-cpu'},
-              { label: 'pytorch', to: '/docs/docs/pytorch/pytorch-install'},
+              { label: 'opencv', to: '/docs/docs/opencv/about-opencv'},
+              { label: 'pytorch', to: '/docs/docs/pytorch/about-pytorch'},
               { label: 'tensorflow', },
               
             ],
@@ -71,9 +71,9 @@ module.exports = {
             label: '👽robot',
             position: 'left',
             items: [
+              { label: 'RoboCon', to: '/docs/docs/robocon/about-rc'},
+              { label: 'RoboMaster', to: '/docs/docs/robomaster/about-rm'},
               { label: 'ROS', to: '/docs/docs/ros/ros-install'},
-              { label: 'RoboMaster', to: '/docs/docs/robomaster/rm-2018-buff-simulation'},
-              { label: 'RoboCon', }
               
             ],
           },
