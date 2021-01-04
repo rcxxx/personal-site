@@ -75,10 +75,11 @@ module.exports = {
 
       {
         type: "category",
-        label: "刷题笔记",
+        label: "🗡剑指Offer笔记",
         collapsed: true,
         items: [
-          
+          'data-structures/剑指offer/常见数据结构',
+          'data-structures/剑指offer/赋值运算符函数',
         ],
       },
 
