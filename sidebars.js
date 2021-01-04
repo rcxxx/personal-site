@@ -1,9 +1,19 @@
 module.exports = {
-  someSidebar: {
-    关于: [
-      'README'
-    ],
-    
+  readme: [
+    'README',
+    {
+      type: "category",
+      label: "搭建知识库",
+      collapsed: true,
+      items: [
+        'about-build',
+        'about-deploy',
+        'about-write',
+      ],
+    }
+  ],
+
+  '💻': {
     "C/C++": [
       {
         type: "category",
@@ -74,6 +84,22 @@ module.exports = {
 
     ], 
 
+    Matlab: [
+      // {
+      //   type: "category",
+      //   label: "install",
+      //   collapsed: true,
+      //   items: [
+          
+      //   ],
+      // },
+    ],
+
+
+
+  },
+
+  '🧠AI': {
     OpenCV: [
       'opencv/about-opencv',
       {
@@ -102,6 +128,7 @@ module.exports = {
     ],
     
     PyTorch: [
+      'pytorch/about-pytorch',
       'pytorch/pytorch-install',
       // {
       //   type: "category",
@@ -113,7 +140,9 @@ module.exports = {
       // },
 
     ],
+  },
 
+  '👽robot': {
     ROS: [
       'ros/ros-install',
       {
@@ -130,17 +159,9 @@ module.exports = {
 
     ],
 
-    Matlab: [
-      // {
-      //   type: "category",
-      //   label: "install",
-      //   collapsed: true,
-      //   items: [
-          
-      //   ],
-      // },
-    ],
+  },
 
+  'RC & RM': {
     RoboCon: [
       'robocon/about-rc',
       {
@@ -186,12 +207,11 @@ module.exports = {
       },
         
     ],
-
-    搭建知识库: [
-      'about-build',
-      'about-deploy',
-      'about-write',
-    ],
   },
+
+  '🎮': {
+
+  },
+
 };
   

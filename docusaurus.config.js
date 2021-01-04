@@ -40,7 +40,7 @@ module.exports = {
           {
             to: 'docs/',
             activeBasePath: 'docs',
-            label: 'Top',
+            label: 'README',
             position: 'left',
           },
 
@@ -51,7 +51,6 @@ module.exports = {
               { label: 'C/C++', to: '/docs/docs/cc/cc-classes-and-objects'},
               { label: 'Python', },
               { label: '数据结构', to: '/docs/docs/data-structures/data-structures-introduction'},
-
               
             ],
           },

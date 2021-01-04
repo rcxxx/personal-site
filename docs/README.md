@@ -4,8 +4,10 @@ title: 🌈欢迎访问我的知识库
 sidebar_label: README
 slug: /
 ---
-# 为什么我要搭建一个知识库
---- 
+
+---
+# 为什么要搭建一个知识库
+
 ## 记录
 > <Highlight color="#CCCCCC"><b>不积跬步，无以至千里；不积小流，无以成江海。</b></Highlight>
 
