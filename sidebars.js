@@ -68,10 +68,38 @@ module.exports = {
 
     ], 
 
-    数据结构: [
-      'data-structures/data-structures-introduction',
-      'data-structures/data-structures-algorithm',
-      'data-structures/data-structures-algorithm-2',
+    数据结构与算法: [
+
+      {
+        type: "category",
+        label: "大话数据结构读书笔记",
+        collapsed: true,
+        items: [
+          
+          'data-structures/大话数据结构/data-structures-introduction',
+          {
+            type: "category",
+            label: "第二章 算法",
+            collapsed: true,
+            items: [
+              'data-structures/大话数据结构/data-structures-algorithm',
+              'data-structures/大话数据结构/data-structures-algorithm-2',
+            ],
+          },
+
+          {
+            type: "category",
+            label: "第三章 线性表",
+            collapsed: true,
+            items: [
+              'data-structures/大话数据结构/data-structures-list',
+            ],
+          },
+          
+          
+          
+        ],
+      },
 
       {
         type: "category",
