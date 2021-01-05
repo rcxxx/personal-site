@@ -3,7 +3,7 @@ module.exports = {
     tagline: '个人学习笔记',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
-    favicon: 'img/lzumi-icon-05-128x128.jpg',    
+    favicon: 'img/icons/lzumi-icon-05-128x128.jpg',    
 
     url: 'https://github.com/rcxxx/docs/',
     baseUrl: '/docs/',
@@ -34,7 +34,8 @@ module.exports = {
         logo: {
           alt: 'My Site Logo',
           // src: 'img/logo.svg',
-          src: 'img/lzumi-icon-05-128x128.svg',
+          // src: 'img/lzumi-icon-05-128x128.svg',
+          src: 'img/icons/konosuba-01.png',
         },
         items: [
           {

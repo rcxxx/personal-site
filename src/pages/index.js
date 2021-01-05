@@ -9,22 +9,85 @@ import styles from './styles.module.css';
 const features = [
   {
     title: '正常的知识',
-    imageUrl: 'img/lzumi-icon-06.svg',
+    imageUrl: 'img/icons/lzumi-06.png',
+    jump: 'docs/',
     description: (
       <>
         每天以🐢的速度增长
       </>
     ),
   },
+
   {
     title: '奇怪的知识',
-    imageUrl: 'img/Izumi-emmm.svg',
+    imageUrl: 'img/icons/C1.png',
+    // jump: '',
     description: (
       <>
         多得就像代码里的🐛
       </>
     ),
   },
+
+//   {
+//     title: 'page3',
+//     imageUrl: 'img/icons/C2.png',
+//     description: (
+//       <>
+//         暂时没想好写什么
+//       </>
+//     ),
+//   },
+
+//   {
+//     title: 'page4',
+//     imageUrl: 'img/icons/re-01.png',
+//     description: (
+//       <>
+//         暂时没想好写什么
+//       </>
+//     ),
+//   },
+
+//   {
+//     title: 'page5',
+//     imageUrl: 'img/icons/re-02.png',
+//     description: (
+//       <>
+//         暂时没想好写什么
+//       </>
+//     ),
+//   },
+
+//   {
+//     title: 'page6',
+//     imageUrl: 'img/icons/re-03.png',
+//     description: (
+//       <>
+//         暂时没想好写什么
+//       </>
+//     ),
+//   },
+
+//   {
+//     title: 'page7',
+//     imageUrl: 'img/icons/konosuba-01.png',
+//     description: (
+//       <>
+//         暂时没想好写什么
+//       </>
+//     ),
+//   },
+
+//   {
+//     title: 'page8',
+//     imageUrl: 'img/icons/yourname-01.png',
+//     description: (
+//       <>
+//         暂时没想好写什么
+//       </>
+//     ),
+//   },
 ];
 
 function Feature({imageUrl, title, description, jump}) {
