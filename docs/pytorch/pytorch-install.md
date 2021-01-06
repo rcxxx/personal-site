@@ -10,13 +10,13 @@ sidebar_label: Install
 先阅读[官方文档](https://pytorch.org/get-started/locally/)
 
 确定好自己所需要安装的版本以及所需要准备的工具
-![](https://raw.githubusercontent.com/rcxxx/my-img/main/img/screenshot/pytorch-install-01.png)
+![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/ubuntu/pytorch-install-01.png)
 
 
 本文档所使用系统版本为Ubuntu18.04.05LTS
 
 GPU相关参数如图 GPU为 GTX1660ti
-![](https://raw.githubusercontent.com/rcxxx/my-img/main/img/screenshot/nvidia-smi.png)
+![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/ubuntu/nvidia-smi.png)
 
 
 ### [<Highlight color="#33FFCC">推荐</Highlight>]Anaconda
@@ -49,7 +49,7 @@ Anaconda能很方便的管理虚拟环境，解决各种依赖的冲突
 ## 正式安装
 根据所准备的选择相对应的选项
 
-![](https://raw.githubusercontent.com/rcxxx/my-img/main/img/screenshot/pytorch-install-02.png)
+![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/ubuntu/pytorch-install-02.png)
 
 
 ``` bash

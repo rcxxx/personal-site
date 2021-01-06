@@ -106,12 +106,12 @@ import TabItem from '@theme/TabItem';
 #### 修改一些站点的标签
 - **`navbar`** 栏中也有一些属性需要设置
   - **`title`** 页面左上角的标题 —— 可以设置logo，具体见[文档](https://v2.docusaurus.io/docs/theme-classic)
-  - **`href`** 右上角 **`Github`** 中的链接以及标签 —— **`items`** 中可以自己添加想要的标签
+  - **`href`** 右上角 **`GitHub`** 中的链接以及标签 —— **`items`** 中可以自己添加想要的标签
 - **`footer`** 中配置页脚
 - 更多个性化的配置可以根据文档进行配置
 - 简洁至上
 
-### [将站点部署到Github](https://sinnammanyo.cn/WikiByRcxxx/docs/about-deploy)
+### [将站点部署到GitHub](https://sinnammanyo.cn/WikiByRcxxx/docs/about-deploy)
 
 ## 参考
 - [使用 Docusaurus 搭建个人博客](https://www.zxuqian.cn/deploy-a-docusaurus-site)

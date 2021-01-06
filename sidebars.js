@@ -174,6 +174,7 @@ module.exports = {
   '👽robot': {
     ROS: [
       'ros/ros-install',
+      
       {
         type: "category",
         label: "入门",
@@ -181,10 +182,13 @@ module.exports = {
         items: [
           'ros/ros-core-concepts',
           'ros/ros-workspace-and-pkg',
+          'ros/ros-vscode',
           'ros/ros-publisher',
           'ros/ros-subscriber',
+          'ros/ros-topic-话题消息定义与使用',
         ],
       },
+      
 
     ],
 

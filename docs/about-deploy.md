@@ -190,9 +190,9 @@ GIT_USER=<GITHUB_USERNAME> yarn deploy
             npx docusaurus deploy
   ```
 - 有几个地方要修改
-  - **`GIT_USER: user`** 中的**user**修改为你**Github**的用户名
-  - **`git config --global user.email "user@email.com"`** 修改为你**Github**的邮箱
-  - **`git config --global user.name "user"`** 中的**user**修改为你**Github**的用户名
+  - **`GIT_USER: user`** 中的**user**修改为你**GitHub**的用户名
+  - **`git config --global user.email "user@email.com"`** 修改为你**GitHub**的邮箱
+  - **`git config --global user.name "user"`** 中的**user**修改为你**GitHub**的用户名
 
 设置完毕后，当**master** 分支有新的拉取请求，会自动确保 **Docusaurus** 构建成功
 

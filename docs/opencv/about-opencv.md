@@ -8,5 +8,6 @@ sidebar_label: 简单了解
 
 - [OpenCV官网](https://opencv.org/)
 
-- [OpenCV官方 Github](https://github.com/opencv/opencv)
+- [OpenCV官方 GitHub](https://github.com/opencv/opencv)
+
 
