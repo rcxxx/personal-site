@@ -9,7 +9,7 @@ import styles from './styles.module.css';
 const features = [
   {
     title: '正常的知识',
-    imageUrl: 'img/icons/lzumi-06.png',
+    imageUrl: 'img/icons/C1.png',
     jump: 'docs/',
     description: (
       <>
@@ -20,7 +20,7 @@ const features = [
 
   {
     title: '奇怪的知识',
-    imageUrl: 'img/icons/C1.png',
+    imageUrl: 'img/icons/C2.png',
     // jump: '',
     description: (
       <>
@@ -29,15 +29,16 @@ const features = [
     ),
   },
 
-//   {
-//     title: 'page3',
-//     imageUrl: 'img/icons/C2.png',
-//     description: (
-//       <>
-//         暂时没想好写什么
-//       </>
-//     ),
-//   },
+  {
+    title: 'To Do🎯',
+    imageUrl: 'img/icons/lzumi-06.png',
+    jump: 'todo-List/',
+    description: (
+      <>
+        Rcxxx's To Do List
+      </>
+    ),
+  },
 
 //   {
 //     title: 'page4',

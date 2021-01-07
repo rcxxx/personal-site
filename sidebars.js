@@ -169,6 +169,11 @@ module.exports = {
       // },
 
     ],
+
+    yolo: [
+      'yolo/yolov5-start',
+      'yolo/yolov5-train',
+    ],
   },
 
   '👽robot': {
@@ -245,6 +250,5 @@ module.exports = {
   '🎮': {
 
   },
-
 };
   

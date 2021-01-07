@@ -63,6 +63,7 @@ module.exports = {
               { label: 'opencv', to: '/docs/docs/opencv/about-opencv'},
               { label: 'pytorch', to: '/docs/docs/pytorch/about-pytorch'},
               { label: 'tensorflow', },
+              { label: 'yolo', to: '/docs/docs/yolo/yolov5-start'},
               
             ],
           },
@@ -109,6 +110,11 @@ module.exports = {
                 label: 'My GitHub',
                 href: 'https://github.com/rcxxx',
               },
+              {
+                label: '机器人队知识库',
+                href: 'https://wiki.wildwolf.tech/',
+              },
+              
             ],
           },
         ],
