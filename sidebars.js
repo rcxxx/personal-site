@@ -147,6 +147,16 @@ module.exports = {
         collapsed: true,
         items: [
           'opencv/opencv-roi',
+          
+        ],
+      },
+      
+      {
+        type: "category",
+        label: "OpenCV tutorials",
+        collapsed: true,
+        items: [
+            'opencv/opencv-equalizeHist',
         ],
       },
       
