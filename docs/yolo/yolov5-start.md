@@ -99,7 +99,8 @@ python detect.py --source data/images --weights yolov5s.pt --conf 0.25
 
 这里因为我执行了两次，所以出现了 `Results saved to runs/detect/exp2`
 
-例程看完了，下一步就是用 `yolov5` 来训练自己制作的数据集
+例程看完了，下一步就是用 `yolov5` 来训练其他的数据集
+- **[传送们](https://sinnammanyo.cn/docs/docs/yolo/yolov5-train)**
 
 ## 参考
 
