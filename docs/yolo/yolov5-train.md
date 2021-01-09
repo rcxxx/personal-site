@@ -109,6 +109,15 @@ python detect.py --source Uno-Cards-Datasets/test/images/000090623_jpg.rf.f7accf
 
 然后我们尝试着从相机获取图像并且动态的检测 UNO 卡片
 
+```
+python detect.py --source 0 --weights runs/train/exp/weights/best.pt
+```
+
+- `--source 0` 参数表示打开本地摄像头
+
+来看看效果
+
+![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/ubuntu/yolov5-UNO-camera.png)
 
 ## 参考
 - **[Improving Uno with Computer Vision (Plus the Dataset so You Can Too)](https://blog.roboflow.com/improving-uno-with-computer-vision/)**
