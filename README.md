@@ -1,33 +1,29 @@
-# Website
+# 关于站点
 
-This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
+这个站点是基于 **[Docusaurus 2](https://v2.docusaurus.io/)** 构建的静态网站，我对其中一些元素进行了修改，使之变成了一个整理学习笔记的知识库
+
+如果喜欢我的站点风格，可以直接复制我的整个仓库，然后再进行更加个性化的修改
+
+## Nodejs & yarn
+使用前确保你的系统中已经安装了 `Nodejs` 和 `yarn`
+
+- [nodejs下载](https://nodejs.org/en/download/)
+
+- [yarn下载](https://classic.yarnpkg.com/en/)
 
 ## Installation
 
-```console
+``` bash
 yarn install
 ```
 
-## Local Development
+将在你本地安装相应的环境
 
-```console
+## 本地预览
+
+``` bash
 yarn start
 ```
 
-This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
+会在你的浏览器窗口中打开一个窗口进行预览，并展示实实时更新
 
-## Build
-
-```console
-yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-```console
-GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
