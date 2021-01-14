@@ -128,15 +128,17 @@ module.exports = {
         darkTheme: require('prism-react-renderer/themes/vsDark'),
       },
     },
+
     stylesheets: [
       {
-        href: '/katex/v0.12.0/katex.min.css',
+        href: 'katex/v0.12.0/katex.min.css',
         type: 'text/css',
         integrity:
           'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X',
         crossorigin: 'anonymous',
       },
     ],
+
     presets: [
       [
         '@docusaurus/preset-classic',
