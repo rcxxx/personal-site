@@ -1,3 +1,6 @@
+const math = require('remark-math');
+const katex = require('rehype-katex');
+
 module.exports = {
     title: "Rcxxx's Notes",
     tagline: '个人学习笔记',
@@ -125,6 +128,15 @@ module.exports = {
         darkTheme: require('prism-react-renderer/themes/vsDark'),
       },
     },
+    stylesheets: [
+      {
+        href: '/katex/v0.12.0/katex.min.css',
+        type: 'text/css',
+        integrity:
+          'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X',
+        crossorigin: 'anonymous',
+      },
+    ],
     presets: [
       [
         '@docusaurus/preset-classic',
@@ -134,6 +146,8 @@ module.exports = {
             path: "./docs",
             routeBasePath: "/docs",
             sidebarPath: require.resolve('./sidebars.js'),
+            remarkPlugins: [math],
+            rehypePlugins: [katex],
           },
 
           theme: {
