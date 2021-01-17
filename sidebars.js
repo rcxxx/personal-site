@@ -43,6 +43,15 @@ module.exports = {
           'cc/cc-11-scope-enum',
         ],
       },
+
+      {
+        type: "category",
+        label: "More Effective C++",
+        collapsed: true,
+        items: [
+          'cc/effective_cc/distinguish-pointers-reference',
+        ],
+      },
       
       {
         type: "category",
