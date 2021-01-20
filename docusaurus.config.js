@@ -83,10 +83,27 @@ module.exports = {
           },
 
           {
+            label: '👾project',
+            position: 'left',
+            items: [
+              { label: '车道线检测', to: '/docs/docs/project/车道线检测/about-lane-detection'},
+              
+            ],
+          },
+
+          {
             label: '🎮',
             position: 'right',
             items: [
-              { label: 'NO GAME NO LIFE',},              
+              { label: '就知道玩',},              
+            ],
+          },
+
+          {
+            label: '🍻',
+            position: 'right',
+            items: [
+              { label: '就知道吃',},          
             ],
           },
           

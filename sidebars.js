@@ -269,5 +269,31 @@ module.exports = {
   '🎮': {
 
   },
+
+  'Project': {
+    "无人驾驶": [
+      {
+        type: "category",
+        label: "车道线检测",
+        collapsed: true,
+        items: [
+          'project/车道线检测/about-lane-detection',
+          'project/车道线检测/hough-transform',
+          'project/车道线检测/opencv-lane-detect',
+          
+        ],
+      },
+
+      {
+        type: "category",
+        label: "待填坑",
+        collapsed: true,
+        items: [
+          
+        ],
+      },
+        
+    ],
+  },
 };
   
