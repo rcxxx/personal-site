@@ -156,7 +156,7 @@ module.exports = {
         collapsed: true,
         items: [
           'opencv/opencv-roi',
-          
+          'opencv/opencv-hough-transform',
         ],
       },
       
@@ -278,7 +278,6 @@ module.exports = {
         collapsed: true,
         items: [
           'project/车道线检测/about-lane-detection',
-          'project/车道线检测/hough-transform',
           'project/车道线检测/opencv-lane-detect',
           
         ],
