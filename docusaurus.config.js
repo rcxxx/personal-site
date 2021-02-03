@@ -60,9 +60,10 @@ module.exports = {
           },
 
           {
-            label: '🧠AI',
+            label: '🧠Interesting',
             position: 'left',
             items: [
+              { label: 'ML & DL', to: '/docs/docs/AI/about-AI'},
               { label: 'opencv', to: '/docs/docs/opencv/about-opencv'},
               { label: 'pytorch', to: '/docs/docs/pytorch/about-pytorch'},
               { label: 'tensorflow', },
@@ -86,6 +87,7 @@ module.exports = {
             label: '👾project',
             position: 'left',
             items: [
+              { label: '毕业设计', to: '/docs/docs/project/毕业设计/graduation-project'},
               { label: '车道线检测', to: '/docs/docs/project/车道线检测/about-lane-detection'},
               
             ],

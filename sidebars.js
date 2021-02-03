@@ -78,7 +78,6 @@ module.exports = {
     ], 
 
     数据结构与算法: [
-
       {
         type: "category",
         label: "大话数据结构读书笔记",
@@ -137,7 +136,7 @@ module.exports = {
 
   },
 
-  '🧠AI': {
+  'Open-source-library': {
     OpenCV: [
       'opencv/about-opencv',
       {
@@ -194,6 +193,29 @@ module.exports = {
       'yolo/yolov5-train',
     ],
   },
+
+  'ML & DL':[
+    'AI/about-AI',
+    {
+      type: "category",
+      label: "机器学习",
+      collapsed: true,
+      items: [
+        'AI/机器学习/机器学习的基本概念',
+        'AI/机器学习/机器学习的三个基本要素',
+        'AI/机器学习/线性回归',
+      ],
+    },
+
+    {
+      type: "category",
+      label: "深度学习",
+      collapsed: true,
+      items: [
+        
+      ],
+    },
+  ],
 
   '👽robot': {
     ROS: [
@@ -271,6 +293,8 @@ module.exports = {
   },
 
   'Project': {
+    
+
     "无人驾驶": [
       {
         type: "category",
@@ -294,5 +318,17 @@ module.exports = {
         
     ],
   },
+
+  '毕设': [
+    {
+      type: "category",
+      label: "毕业设计",
+      collapsed: true,
+      items: [
+        'project/毕业设计/graduation-project',
+        'project/毕业设计/graduation-project-schedule',
+      ],
+    },
+  ],
 };
   
