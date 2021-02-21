@@ -191,6 +191,7 @@ module.exports = {
     yolo: [
       'yolo/yolov5-start',
       'yolo/yolov5-train',
+      'yolo/yolov5-训练自建数据集',
     ],
   },
 
@@ -326,7 +327,7 @@ module.exports = {
       collapsed: true,
       items: [
         'project/毕业设计/graduation-project',
-        'project/毕业设计/graduation-project-schedule',
+        'project/毕业设计/graduation-project-work-list',
       ],
     },
   ],
