@@ -8,15 +8,15 @@
 <link rel="alternate" type="application/atom+xml" href="/docs/blog/atom.xml" title="Rcxxx's Notes Blog Atom Feed">
 <link rel="stylesheet" href="katex/v0.12.0/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous"><title data-react-helmet="true">prefer-cc-style-cast | Rcxxx&#x27;s Notes</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_version" content="current"><meta data-react-helmet="true" name="docusaurus_tag" content="docs-default-current"><meta data-react-helmet="true" property="og:title" content="prefer-cc-style-cast | Rcxxx&#x27;s Notes"><meta data-react-helmet="true" name="description" content="最好使用 C++ 转型操作符"><meta data-react-helmet="true" property="og:description" content="最好使用 C++ 转型操作符"><meta data-react-helmet="true" property="og:url" content="https://github.com/rcxxx/docs//docs/docs/cc/effective_cc/prefer-cc-style-cast"><link data-react-helmet="true" rel="shortcut icon" href="/docs/img/icons/lzumi-icon-05-128x128.jpg"><link data-react-helmet="true" rel="canonical" href="https://github.com/rcxxx/docs//docs/docs/cc/effective_cc/prefer-cc-style-cast"><link rel="stylesheet" href="/docs/styles.4772c0ff.css">
 <link rel="preload" href="/docs/styles.a0bd6ca2.js" as="script">
-<link rel="preload" href="/docs/runtime~main.82677994.js" as="script">
-<link rel="preload" href="/docs/main.d42dde37.js" as="script">
-<link rel="preload" href="/docs/1.2a264cff.js" as="script">
-<link rel="preload" href="/docs/2.5081e4ef.js" as="script">
-<link rel="preload" href="/docs/78.9f2b423d.js" as="script">
-<link rel="preload" href="/docs/80.173336b2.js" as="script">
-<link rel="preload" href="/docs/935f2afb.6dab0724.js" as="script">
-<link rel="preload" href="/docs/17896441.6b01842e.js" as="script">
-<link rel="preload" href="/docs/8c382531.8e13425a.js" as="script">
+<link rel="preload" href="/docs/runtime~main.a2109afb.js" as="script">
+<link rel="preload" href="/docs/main.57524a2e.js" as="script">
+<link rel="preload" href="/docs/1.a3bc6d85.js" as="script">
+<link rel="preload" href="/docs/2.c152187a.js" as="script">
+<link rel="preload" href="/docs/79.a246fda0.js" as="script">
+<link rel="preload" href="/docs/81.fb237c50.js" as="script">
+<link rel="preload" href="/docs/935f2afb.375d8d2c.js" as="script">
+<link rel="preload" href="/docs/17896441.0896ab23.js" as="script">
+<link rel="preload" href="/docs/8c382531.b091b294.js" as="script">
 </head>
 <body>
 <script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
@@ -24,14 +24,14 @@
 </span></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">double</span><span class="token plain"> result </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">(</span><span class="token keyword" style="color:#00009f">double</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain">num_1</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">/</span><span class="token plain"> num_2</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain">        </span><span class="token comment" style="color:#999988;font-style:italic">// C 风格类型转换</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block">
 </span></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">// 如果采用 C++ 转型操作符</span><span class="token plain"></span></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">double</span><span class="token plain"> result_2 </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">static_cast</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token keyword" style="color:#00009f">double</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">num_1</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">/</span><span class="token plain"> num_2</span><span class="token punctuation" style="color:#393A34">;</span></div></div></div><button type="button" aria-label="Copy code to clipboard" class="copyButton_2GIj">Copy</button></div></div><p>使用 C++ 的转型操作符，更容易被辨识出来</p><hr><p><strong><code>static_cast</code></strong> 基本上与旧式的类型转换功能相似，也具有相同的限制，例如不能将一个 <code>double</code> 转型为 <code>pointer</code> ，不能将 <code>struct</code> 转型为 <code>int</code></p><ul><li><code>static_cast</code> 甚至不能移除表达式的常量性（constness），因为有一个新的转型操作符 <code>const_cast</code> 专司起职</li></ul><p><strong>其他新式 C++ 转型操作符适用于更集中的目的</strong></p><p><strong><code>const_cast</code></strong> 用来改变表达式中的 <code>常量性（constness）</code> 或 <code>变易性（volatileness）</code> ，使用 <code>const_cast</code> 是一种强调，使用这个操作符只用来改变某物的常量性或变易形，如果将 <code>const_cast</code> 用于其他用途，转型操作会被拒绝</p><p><strong><code>dynamic_cast</code></strong> 用来执行继承体系中的 &quot;安全向下转型或跨系转型动作&quot; ，也就是说，可以利用 <code>dynamic_cast</code> 将指向基类的指针或引用转型为指向派生类的指针或引用，并能得知是否转型成功，如果转型失败，会以一个空指针（当转型对象是指针）或一个 <code>exception</code> （当转型对象是 reference）表现出来</p><div class="mdxCodeBlock_1zKU"><code class="language-cpp"></code></div><p><strong>``</strong></p></div></article><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_2xL- thin-scrollbar"></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">More</h4><ul class="footer__items"><li class="footer__item"><a href="https://sinnammanyo.cn/" target="_blank" rel="noopener noreferrer" class="footer__link-item">My Blog</a></li><li class="footer__item"><a href="https://github.com/rcxxx" target="_blank" rel="noopener noreferrer" class="footer__link-item">My GitHub</a></li><li class="footer__item"><a href="https://wiki.wildwolf.tech/" target="_blank" rel="noopener noreferrer" class="footer__link-item">机器人队知识库</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 🌈RCXXX. Built with Docusaurus.</div></div></div></footer></div>
 <script src="/docs/styles.a0bd6ca2.js"></script>
-<script src="/docs/runtime~main.82677994.js"></script>
-<script src="/docs/main.d42dde37.js"></script>
-<script src="/docs/1.2a264cff.js"></script>
-<script src="/docs/2.5081e4ef.js"></script>
-<script src="/docs/78.9f2b423d.js"></script>
-<script src="/docs/80.173336b2.js"></script>
-<script src="/docs/935f2afb.6dab0724.js"></script>
-<script src="/docs/17896441.6b01842e.js"></script>
-<script src="/docs/8c382531.8e13425a.js"></script>
+<script src="/docs/runtime~main.a2109afb.js"></script>
+<script src="/docs/main.57524a2e.js"></script>
+<script src="/docs/1.a3bc6d85.js"></script>
+<script src="/docs/2.c152187a.js"></script>
+<script src="/docs/79.a246fda0.js"></script>
+<script src="/docs/81.fb237c50.js"></script>
+<script src="/docs/935f2afb.375d8d2c.js"></script>
+<script src="/docs/17896441.0896ab23.js"></script>
+<script src="/docs/8c382531.b091b294.js"></script>
 </body>
 </html>
