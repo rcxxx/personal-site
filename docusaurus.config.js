@@ -55,6 +55,7 @@ module.exports = {
               { label: 'C/C++', to: '/docs/docs/cc/cc-classes-and-objects'},
               { label: 'Python', },
               { label: '数据结构', to: '/docs/docs/data-structures/大话数据结构/data-structures-introduction'},
+              { label: 'ios', to: '/docs/docs/ios/ios-about-xcode'},
               
             ],
           },

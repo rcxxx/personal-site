@@ -132,7 +132,36 @@ module.exports = {
       // },
     ],
 
+    "ios": [
+      'ios/ios-about-xcode',
+      'ios/ios-reference-data',
+      {
+        type: "category",
+        label: "swift",
+        collapsed: true,
+        items: [
+          
+        ],
+      },
 
+      {
+        type: "category",
+        label: "swiftUI",
+        collapsed: true,
+        items: [
+          'ios/swiftUI/swiftUI-show-web-pages'
+        ],
+      },
+
+      {
+        type: "category",
+        label: "Project",
+        collapsed: true,
+        items: [
+          
+        ],
+      },
+    ],
 
   },
 

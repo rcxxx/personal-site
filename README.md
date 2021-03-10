@@ -27,3 +27,9 @@ yarn start
 
 会在你的浏览器窗口中打开一个窗口进行预览，并展示实实时更新
 
+
+如果想要将仓库推送到远程仓库中，可以参考 **[模板仓库](https://github.com/rcxxx/docusaurus-template)**
+
+
+
+
