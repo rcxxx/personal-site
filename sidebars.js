@@ -149,7 +149,8 @@ module.exports = {
         label: "swiftUI",
         collapsed: true,
         items: [
-          'ios/swiftUI/swiftUI-show-web-pages'
+          'ios/swiftUI/swiftUI-show-web-pages',
+          'ios/swiftUI/swiftUI-screen-shot',
         ],
       },
 

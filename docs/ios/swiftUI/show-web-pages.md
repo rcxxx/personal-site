@@ -95,7 +95,7 @@ struct ContentView: View {
 
 `let view = myWebView(url: "https://bilibili.com")`
 
-让我看看这周又更新了什么新番 🤩
+- 让我看看这周又更新了什么新番 🤩
 
 ![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/macOS/show-web-page-bilibili.png)
 
@@ -107,7 +107,7 @@ struct ContentView: View {
 
 买个新杯子，在公司也能泡上枸杞了
 
-`let view = myWebView(url: "https://taobao.com")`
+`let view = myWebView(url: "https://www.msn.cn/zh-cn/money/markets")`
 
 - 如果你手头富裕，心态良好，平时喜欢炒股
 
@@ -121,3 +121,4 @@ struct ContentView: View {
 
 - [SwiftUI-Guide](https://github.com/fzhlee/SwiftUI-Guide)
 - [swiftui-tutorials](https://developer.apple.com/tutorials/swiftui/)
+- [IOS-SwiftUI-网页视图（WKWebView）的应用](https://zhuanlan.zhihu.com/p/150072567)
