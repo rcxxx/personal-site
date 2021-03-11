@@ -158,7 +158,90 @@ var body: some View {
 
 大功告成······
 
+### 方案二
+之前尝试用 `SWViewCapture` 来实现截图功能，总是出现 `crash` ，困扰了我很久，在网上找了很久也是没有头绪，结合上面的实现，推测可能是权限的问题，这里将权限设置好之后再来试着实现一下
+
+要使用封装好的第三方库，需要将第三方库的 `.xcodeproj` 目录直接复制到工程根目录下
+
+在 [startry/SwViewCapture](https://github.com/startry/SwViewCapture) 仓库中找到 `SwViewCapture.xcodeproj`，复制到工程目录下
+
+仓库中也有相应的 `API` 的使用方法
+ 
+之后点击工程根目录配置，在 `General` 中找到 `Frameworks, Libraries, and Embedded Content`
+
+点 `+` 然后找到 `SWViewCapture.framework` 添加
+
+重新进行一下编译，就能直接导入了
+
+`import SwViewCapture`
+
+接下来是同样的操作，但是 `SWViewCapture` 类库中已经封装好了截图功能，我们只需要直接调用给出的接口就好
+
+将 `takescreenShot` 修改如下，在第 5-8 行调用了 `takescreenShot` 的接口
+``` swift {4} {9}
+func takescreenShot (_ shouldSave: Bool = false) -> UIImage? {
+    var screenshotImage: UIImage?
+    
+
+    webView.swCapture { (capturedImage) -> Void in
+        screenshotImage = capturedImage
+    }
+    
+
+    if let image = screenshotImage, shouldSave {
+        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+    }
+    
+    return screenshotImage
+}
+```
+
+完成之后测试，果然是因为相册权限的问题导致崩溃
+
+:::tips
+`ios` 的开发过程中，很需要注意不同版本之间的 API 的兼容性，官方的帮助文档中大部分都能找到需要的帮助
+
+GitHub 也是很需要经常浏览的地方，开源永远的神
+:::
+
+### 保存截图
+`UIImageWriteToSavedPhotosAlbum()` 可以将 `UIImage` 保存到相册中，这里可以通过一些方法修改想要保存的图片格式
+
+通过给 `UIImage` 增加拓展功能，可以很方便的设定想要导出的图像格式
+- 拓展名要声明在全局
+
+``` swift
+extension UIImage {
+    func toPNG() -> UIImage? {
+        guard let imageData = self.pngData() else {return nil}
+        guard let imagePng = UIImage(data: imageData) else {return nil}
+        return imagePng
+    }
+}
+```
+
+如果需要导出 `jpeg` 格式的图片
+
+则可以将
+
+**`guard let imageData = self.pngData() else {return nil}`**
+
+改为
+
+**`guard let imageData = self.jpegData(compressionQuality: 1.0) else {return nil}`**
+
+变量名稍作修改即可
+
+使用时直接使用 `UIImage` 中的拓展方法即可
+
+### 本项目源码
+待整理······
+
 ## 参考
 - [UIImageWriteToSavedPhotosAlbum crashed in iOS 11](https://developer.apple.com/forums/thread/89796)
 - [How do I take a full screen Screenshot in Swift?](https://stackoverflow.com/questions/25448879/how-do-i-take-a-full-screen-screenshot-in-swift)
 - [SwiftUI-Guide](https://github.com/fzhlee/SwiftUI-Guide#11Button-sheet)
+- [Swift - 截图功能的实现2](https://www.hangge.com/blog/cache/detail_2114.html)
+- [startry/SwViewCapture](https://github.com/startry/SwViewCapture)
+- [How to save a UIImage to a file using jpegData() and pngData()](https://www.hackingwithswift.com/example-code/media/how-to-save-a-uiimage-to-a-file-using-jpegdata-and-pngdata)
+- [UIImageWriteToSavedPhotosAlbum save as PNG with transparency?](https://stackoverflow.com/questions/1489250/uiimagewritetosavedphotosalbum-save-as-png-with-transparency)
