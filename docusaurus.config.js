@@ -106,7 +106,7 @@ module.exports = {
             label: '🍻',
             position: 'right',
             items: [
-              { label: '就知道吃',},          
+              { label: '就知道吃', to: '/docs/docs/life/foods/always-eating'},          
             ],
           },
           

@@ -40,15 +40,15 @@ const features = [
     ),
   },
 
-//   {
-//     title: 'page4',
-//     imageUrl: 'img/icons/re-01.png',
-//     description: (
-//       <>
-//         暂时没想好写什么
-//       </>
-//     ),
-//   },
+  {
+    title: '吃货看这里',
+    imageUrl: 'img/icons/re-01.png',
+    description: (
+      <>
+        喜欢的美食收录
+      </>
+    ),
+  },
 
 //   {
 //     title: 'page5',

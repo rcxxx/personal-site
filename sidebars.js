@@ -319,12 +319,33 @@ module.exports = {
     ],
   },
 
-  '🎮': {
+  "🎮":[
 
-  },
+    
+    {
+      type: "category",
+      label: "就知道玩",
+      collapsed: true,
+      items: [
+        
+      ],
+    },
+  ],
+
+  "🍻":[
+    'life/foods/always-eating',
+
+    {
+      type: "category",
+      label: "就知道吃",
+      collapsed: true,
+      items: [
+        
+      ],
+    },
+  ],
 
   'Project': {
-    
 
     "无人驾驶": [
       {
