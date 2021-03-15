@@ -178,7 +178,7 @@ var body: some View {
 接下来是同样的操作，但是 `SWViewCapture` 类库中已经封装好了截图功能，我们只需要直接调用给出的接口就好
 
 将 `takescreenShot` 修改如下，在第 5-8 行调用了 `takescreenShot` 的接口
-``` swift {4} {9}
+``` swift {4, 9}
 func takescreenShot (_ shouldSave: Bool = false) -> UIImage? {
     var screenshotImage: UIImage?
     

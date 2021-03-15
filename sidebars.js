@@ -151,6 +151,7 @@ module.exports = {
         items: [
           'ios/swiftUI/swiftUI-show-web-pages',
           'ios/swiftUI/swiftUI-screen-shot',
+          'ios/swiftUI/swiftUI-ReplayKit'
         ],
       },
 
