@@ -231,3 +231,5 @@ ZStack {
 - [ReplayKitBySwiftUI](https://github.com/jerryleetw1992/ReplayKitBySwiftUI/blob/master/ReplayKitBySwiftUI/ContentView.swift)
 
 - [Instant Replay](https://github.com/valentebruno/ReplayKit/blob/master/Instant%20Replay/ViewController.swift)
+
+- [iOSReplayKit实践](https://www.jianshu.com/p/b2618a65aa34)
