@@ -77,7 +77,7 @@ module.exports = {
 
     ], 
 
-    数据结构与算法: [
+    "数据结构与算法": [
       {
         type: "category",
         label: "大话数据结构读书笔记",
@@ -119,6 +119,18 @@ module.exports = {
         ],
       },
 
+    ], 
+
+    "设计模式": [
+      'design-pattern/design-pattern-UML-class-diagram',
+      // {
+      //   type: "category",
+      //   label: "",
+      //   collapsed: true,
+      //   items: [
+          
+      //   ],
+      // },
     ], 
 
     Matlab: [
