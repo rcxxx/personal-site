@@ -282,6 +282,34 @@ module.exports = {
 
     ],
 
+    'PCL': [
+      'point-cloud/PCL/pcl-install',
+      
+      {
+        type: "category",
+        label: "",
+        collapsed: true,
+        items: [
+
+        ],
+      },
+      
+    ],
+
+    'Open3D': [
+      'point-cloud/Open3D/open3d-install',
+      
+      {
+        type: "category",
+        label: "",
+        collapsed: true,
+        items: [
+
+        ],
+      },
+      
+    ],
+
   },
 
   'RC & RM': {

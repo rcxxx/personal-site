@@ -81,7 +81,7 @@ module.exports = {
               { label: 'RoboCon', to: '/docs/docs/robocon/about-rc'},
               { label: 'RoboMaster', to: '/docs/docs/robomaster/about-rm'},
               { label: 'ROS', to: '/docs/docs/ros/ros-install'},
-              
+              { label: 'Point Cloud', to: '/docs/docs/point-cloud/PCL/pcl-install'},
             ],
           },
 
