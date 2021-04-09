@@ -7,6 +7,7 @@ sidebar_label: 安装
 ## About-Open3D
 - [官网](http://www.open3d.org/)
 - [Open3D-Gtihub](https://github.com/intel-isl/Open3D)
+- [Open3D (C++ API) Documentation](http://www.open3d.org/docs/release/cpp_api/index.html)
 
 ## 从源码编译
 
@@ -49,6 +50,9 @@ cmake ..
 如果提示 `cmake` 版本过低，可以到 [`cmake download`](https://cmake.org/download/) 下载合适的版本
 
 `cmake` 配置完成后
+
+- 开始编译，编译过程中会克隆很多的第三方库，最好先配置一下 git 的代理，不然编译很难完成
+  - [git配置代理](https://blog.csdn.net/xiaxinkai/article/details/112973262)
 
 ``` shell
 make -j$(nproc-2)
@@ -171,3 +175,4 @@ sudo make install
 - [Ubuntu18.04 安装Open3D C++与Python版本](https://blog.csdn.net/zpwhust/article/details/106746669)
 - [c++ fmt 库安装和使用示例](http://www.bubuko.com/infodetail-2664946.html)
 - [Ubuntu上配置编译GLFW并运行实例](https://blog.csdn.net/xyh930929/article/details/83745958)
+- [git配置http、socks5代理](https://blog.csdn.net/xiaxinkai/article/details/112973262)
