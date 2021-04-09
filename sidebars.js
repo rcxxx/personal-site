@@ -287,10 +287,10 @@ module.exports = {
       
       {
         type: "category",
-        label: "",
+        label: "learn",
         collapsed: true,
         items: [
-
+          'point-cloud/PCL/pcl-visualizer'
         ],
       },
       
