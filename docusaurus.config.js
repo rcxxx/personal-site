@@ -171,6 +171,7 @@ module.exports = {
             sidebarPath: require.resolve('./sidebars.js'),
             remarkPlugins: [math],
             rehypePlugins: [katex],
+            editUrl: "https://github.com/rcxxx/docs/tree/master",
           },
 
           theme: {

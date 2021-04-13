@@ -77,6 +77,10 @@ while (!viewer->wasStopped ())
 ```
 - 运行循环，每次调用 `spinOnce` 都会给观看者时间来处理事件，使其具有交互性
 
+- 运行结果
+
+![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/ubuntu/pcl/visualisation-simple.png)
+
 ### RGB point clouds
 函数 `pcl::visualization::PCLVisualizer::Ptr rgbVis()` 中定义了此方法如何实现
 
@@ -92,6 +96,10 @@ viewer->addPointCloud<pcl::PointXYZRGB> (cloud, rgb, "sample cloud");
 ```
 - 添加点云时，指定了颜色处理参数
 
+- 运行结果
+
+![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/ubuntu/pcl/visualisation-RBG.png)
+
 ### Custom colours
 `rgbVis()` 中为点云提供单一颜色，可以为特定的点云提供自定义的颜色，从而能区分单个点云
 
@@ -104,6 +112,10 @@ pcl::visualization::PointCloudColorHandlerCustom<pcl::PointXYZ> single_color(clo
 ```
 - 设置点云类型时指定了颜色
 
+- 运行结果
+
+![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/ubuntu/pcl/visualisation-custom.png)
+
 ### Normals and other information
 函数`pcl::visualization::PCLVisualizer::Ptr normalsVis()` 中展示了如何显示点云的法线
 
@@ -113,6 +125,9 @@ viewer->addPointCloudNormals<pcl::PointXYZRGB, pcl::Normal> (cloud, normals, 10,
 - 其他代码可参照 `rgbVis()` ，然后绘制了法线
   - 关于绘制法线实现的讲解 [Estimating Surface Normals in a PointCloud](https://pcl-tutorials.readthedocs.io/en/latest/normal_estimation.html#normal-estimation)
 
+- 运行结果
+
+![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/ubuntu/pcl/visualisation-normals.png)
 
 ### Drawing Shapes
 函数 `pcl::visualization::PCLVisualizer::Ptr shapesVis()` 定义了向查看器添加形状的方法
@@ -125,7 +140,7 @@ viewer->addLine<pcl::PointXYZRGB> ((*cloud)[0], (*cloud)[cloud->size() - 1], "li
 ``` cpp
 viewer->addSphere ((*cloud)[0], 0.2, 0.5, 0.5, 0.0, "sphere");
 ```
-- 绘制园
+- 绘制圆
 
 ``` cpp
 pcl::ModelCoefficients coeffs;
@@ -150,10 +165,14 @@ viewer->addPlane (coeffs, "plane");
 ```
 - 绘制圆锥
 
+- 运行结果
+
+![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/ubuntu/pcl/visualisation-shapes.png)
+
 ### Multiple viewports
 函数 `pcl::visualization::PCLVisualizer::Ptr viewportsVis()` 演示了在单独的窗口中绘制多个点云
 
+- 运行结果
 
-
-### Interaction Customization
+![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/ubuntu/pcl/visualisation-Viewports.png)
 

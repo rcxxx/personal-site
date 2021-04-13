@@ -279,6 +279,14 @@ module.exports = {
         ],
       },
       
+      {
+        type: "category",
+        label: "ros-pcl",
+        collapsed: true,
+        items: [
+          'ros/ros-point-cloud/ros-bag-to-pcd',
+        ],
+      },
 
     ],
 
