@@ -275,6 +275,7 @@ module.exports = {
           'ros/ros-vscode',
           'ros/ros-publisher',
           'ros/ros-subscriber',
+          'ros/ros-callback',
           'ros/ros-topic-话题消息定义与使用',
         ],
       },
