@@ -16,7 +16,7 @@ sidebar_label: Install（仅CPU）
 ---------|:--------:|
  系统版本 | Ubuntu18.04LTS |
  GCC/G++ | 7.5.0 |
- OpenCV | 4.1.0 |
+ OpenCV | 4.4.0 |
 
 ### 安装各种依赖
 
@@ -44,27 +44,27 @@ git clone https://github.com/opencv/opencv_contrib.git
 git clone https://github.com/opencv/opencv_extra.git
 ```
 
-- 注意这里需要分别将三个仓库中的分支都切换至 `4.1.0`
+- 注意这里需要分别将三个仓库中的分支都切换至 `4.4.0`
 
 从官网下载压缩包 <Highlight color="#25c2a0">[推荐]</Highlight>
 
-- [**`opencv-4.1.0`**](https://github.com/opencv/opencv/releases/tag/4.1.0)
-- [**`opencv_contrib-4.1.0`**](https://github.com/opencv/opencv_contrib/releases/tag/4.1.0)
-- [**`opencv_extra-4.1.0`**](https://github.com/opencv/opencv_extra/releases/tag/4.1.0)
+- [**`opencv-4.4.0`**](https://github.com/opencv/opencv/releases/tag/4.4.0)
+- [**`opencv_contrib-4.4.0`**](https://github.com/opencv/opencv_contrib/releases/tag/4.4.0)
+- [**`opencv_extra-4.4.0`**](https://github.com/opencv/opencv_extra/releases/tag/4.4.0)
 
 下载完成后解压
 
 ``` bash
-tar zxvf opencv-4.1.0.tar.gz ~/workspace/
-tar zxvf opencv_contrib-4.1.0.tar.gz ~/workspace/
-tar zxvf opencv_extra-4.1.0.tar.gz ~/workspace/
+tar zxvf opencv-4.4.0.tar.gz ~/workspace/
+tar zxvf opencv_contrib-4.4.0.tar.gz ~/workspace/
+tar zxvf opencv_extra-4.4.0.tar.gz ~/workspace/
 ```
 
 ### 编译
 新建 `build/` 目录存放编译生成的文件
 
 ``` bash
-cd ~/workspace/opencv-4.1.0/
+cd ~/workspace/opencv-4.4.0/
 mkdir build
 cd build
 ```
@@ -74,8 +74,8 @@ cd build
 ``` bash
 cmake -DCMAKE_BUILD_TYPE=Release \
     -DINSTALL_TESTS=ON \
-    -DOPENCV_TEST_DATA_PATH=../../opencv_extra-4.1.0/testdata \
-    -DOPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-4.1.0/modules \
+    -DOPENCV_TEST_DATA_PATH=../../opencv_extra-4.4.0/testdata \
+    -DOPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-4.4.0/modules \
     -DCMAKE_INSTALL_PREFIX=/usr/local \
     -DOPENCV_GENERATE_PKGCONFIG=YES \
     ..
@@ -123,7 +123,7 @@ export PKG_CONFIG_PATH
 
 ### 测试
 ``` bash
-cd ~/workspace/opencv-4.1.0/samples/cpp/example_cmake/
+cd ~/workspace/opencv-4.4.0/samples/cpp/example_cmake/
 cmake .
 make
 ./opencv_example
@@ -132,7 +132,7 @@ make
 成功启动摄像头设备并显示 `Hello OpenCV` 字样，安装完成
 
 ## 参考
-[官网tutorial](https://docs.opencv.org/4.1.0/d7/d9f/tutorial_linux_install.html)
+[官网tutorial](https://docs.opencv.org/4.4.0/d7/d9f/tutorial_linux_install.html)
 
 export const Highlight = ({children, color}) => ( <span style={{
     backgroundColor: color,
