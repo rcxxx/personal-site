@@ -286,6 +286,7 @@ module.exports = {
         collapsed: true,
         items: [
           'ros/ros-point-cloud/ros-bag-to-pcd',
+          'ros/ros-point-cloud/ros-rosbag-play-rviz',
         ],
       },
 
