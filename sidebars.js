@@ -291,7 +291,9 @@ module.exports = {
       },
 
     ],
+  },
 
+  'Point Cloud':{
     'PCL': [
       'point-cloud/PCL/pcl-install',
       
@@ -319,7 +321,6 @@ module.exports = {
       },
       
     ],
-
   },
 
   'RC & RM': {
@@ -371,8 +372,6 @@ module.exports = {
   },
 
   "🎮":[
-
-    
     {
       type: "category",
       label: "就知道玩",
@@ -385,7 +384,6 @@ module.exports = {
 
   "🍻":[
     'life/foods/always-eating',
-
     {
       type: "category",
       label: "就知道吃",
