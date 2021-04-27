@@ -211,6 +211,15 @@ module.exports = {
         ],
       },
       
+      {
+        type: "category",
+        label: "OpenCV DNN",
+        collapsed: true,
+        items: [
+            'opencv/dnn/opencv-dnn-yolov4',
+        ],
+      },
+
     ],
 
     TensorFlow: [
