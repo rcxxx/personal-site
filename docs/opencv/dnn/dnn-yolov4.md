@@ -9,11 +9,11 @@ sidebar_label: DNN-YOLO v4
 使用 DNN 模块需要编译 `opencv_contrib` 
 
 可以参考
-- [Install（仅CPU）]
+- [Install（仅CPU）](https://sinnammanyo.cn/docs/docs/opencv/opencv-install-cpu)
 
 
 如果需要开启 GPU 加速，可以参考
-- [Install（GPU）]
+- [Install（GPU）](https://sinnammanyo.cn/docs/docs/opencv/opencv-install-gpu)
 
 `cmake` 参数应添加下面这些
 
@@ -159,7 +159,7 @@ waitKey(0);
 
 ### 测试
 
-编译程序后一次执行输入文件路径
+编译程序后执行，依次输入文件路径
 ``` shell
 ./opencv-dnn-test <yolov4_cfg_path> <yolov4_weights_path> <coco_classes_path> <file_name_path>
 ```
@@ -170,8 +170,7 @@ waitKey(0);
 
 ## 参考
 
-
-
+- [基于OpenCV和YOLOv3深度学习的目标检测](https://blog.csdn.net/qq_27158179/article/details/81915740)
 - [dnn模块之基于YOLOv3（Tiny）模型的（实时）对象检测](https://blog.csdn.net/weixin_45224869/article/details/106148983)
 - [opencv-python dnn模块使用CUDA加速](https://blog.csdn.net/qq_43019451/article/details/105894552)
 - [How to run OpenCV DNN on NVidia GPU](https://answers.opencv.org/question/201456/how-to-run-opencv-dnn-on-nvidia-gpu/?answer=201461)
