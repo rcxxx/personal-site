@@ -441,5 +441,16 @@ module.exports = {
       ],
     },
   ],
+
+  '奇怪的知识': [
+    {
+      type: "category",
+      label: "奇怪的编程知识",
+      collapsed: true,
+      items: [
+        'Useless-knowledge/about-code/ascii-art',
+      ],
+    },
+  ],
 };
   

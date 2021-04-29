@@ -21,7 +21,7 @@ const features = [
   {
     title: '奇怪的知识',
     imageUrl: 'img/icons/C2.png',
-    // jump: '',
+    jump: 'docs/Useless-knowledge/about-code/ascii-art',
     description: (
       <>
         多得就像代码里的🐛
