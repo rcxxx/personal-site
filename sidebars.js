@@ -177,6 +177,10 @@ module.exports = {
       },
     ],
 
+    "开发环境配置": [
+      'tutorials/about-vscode'
+    ],
+
   },
 
   'Open-source-library': {
