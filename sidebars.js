@@ -290,6 +290,7 @@ module.exports = {
           'ros/ros-subscriber',
           'ros/ros-callback',
           'ros/ros-topic-话题消息定义与使用',
+          'ros/ros-launch',
         ],
       },
       
