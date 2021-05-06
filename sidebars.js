@@ -195,7 +195,7 @@ module.exports = {
           'opencv/opencv-install-gpu',
         ],
       },
-      
+      'opencv/opencv-pixel-connect',
       {
         type: "category",
         label: "常用方法",
