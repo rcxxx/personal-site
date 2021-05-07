@@ -302,6 +302,7 @@ module.exports = {
           'ros/ros-point-cloud/ros-bag-to-pcd',
           'ros/ros-point-cloud/ros-rosbag-play-rviz',
           'ros/ros-point-cloud/ros-pcl-topic',
+          'ros/ros-point-cloud/ros-multi_pass_segemntation',
         ],
       },
 
