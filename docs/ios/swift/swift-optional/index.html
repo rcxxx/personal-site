@@ -7,16 +7,16 @@
 <link rel="alternate" type="application/rss+xml" href="/docs/blog/rss.xml" title="Rcxxx's Notes Blog RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/docs/blog/atom.xml" title="Rcxxx's Notes Blog Atom Feed">
 <link rel="stylesheet" href="katex/v0.12.0/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous"><title data-react-helmet="true">Swift 「!」 和 「?」 的区别 | Rcxxx&#x27;s Notes</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_version" content="current"><meta data-react-helmet="true" name="docusaurus_tag" content="docs-default-current"><meta data-react-helmet="true" property="og:title" content="Swift 「!」 和 「?」 的区别 | Rcxxx&#x27;s Notes"><meta data-react-helmet="true" name="description" content="! 和 ? 是啥"><meta data-react-helmet="true" property="og:description" content="! 和 ? 是啥"><meta data-react-helmet="true" property="og:url" content="https://github.com/rcxxx/docs//docs/docs/ios/swift/swift-optional"><link data-react-helmet="true" rel="shortcut icon" href="/docs/img/icons/lzumi-icon-05-128x128.jpg"><link data-react-helmet="true" rel="canonical" href="https://github.com/rcxxx/docs//docs/docs/ios/swift/swift-optional"><link rel="stylesheet" href="/docs/styles.78be3478.css">
-<link rel="preload" href="/docs/styles.61720e73.js" as="script">
-<link rel="preload" href="/docs/runtime~main.25310cce.js" as="script">
-<link rel="preload" href="/docs/main.52b30435.js" as="script">
-<link rel="preload" href="/docs/1.2a87ec5c.js" as="script">
-<link rel="preload" href="/docs/2.6f07626b.js" as="script">
-<link rel="preload" href="/docs/100.173691da.js" as="script">
-<link rel="preload" href="/docs/102.ea874c32.js" as="script">
-<link rel="preload" href="/docs/935f2afb.dd752c37.js" as="script">
-<link rel="preload" href="/docs/17896441.472c613d.js" as="script">
-<link rel="preload" href="/docs/0d1350d9.191b9bb4.js" as="script">
+<link rel="preload" href="/docs/styles.e720d90d.js" as="script">
+<link rel="preload" href="/docs/runtime~main.36d3ac64.js" as="script">
+<link rel="preload" href="/docs/main.30edd94a.js" as="script">
+<link rel="preload" href="/docs/1.fac6d712.js" as="script">
+<link rel="preload" href="/docs/2.f3d4cf03.js" as="script">
+<link rel="preload" href="/docs/102.6bc5b48f.js" as="script">
+<link rel="preload" href="/docs/104.c9b9a0b1.js" as="script">
+<link rel="preload" href="/docs/935f2afb.4c82561f.js" as="script">
+<link rel="preload" href="/docs/17896441.35be6597.js" as="script">
+<link rel="preload" href="/docs/0d1350d9.a83a2b32.js" as="script">
 </head>
 <body>
 <script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
@@ -24,15 +24,15 @@
 </span></div><div class="token-line" style="color:#393A34"><span class="token plain">if let str = str1 { </span></div><div class="token-line" style="color:#393A34"><span class="token plain">      let out = str2 + str </span></div><div class="token-line" style="color:#393A34"><span class="token plain">      print(out)</span></div><div class="token-line" style="color:#393A34"><span class="token plain">}</span></div></div></div><button type="button" aria-label="Copy code to clipboard" class="copyButton_2GIj">Copy</button></div></div><p>当 <code>str1</code> 的值不为 <code>nil</code> 时，才会执行 <code>if</code> 中语句，为 <code>nil</code> 时则会跳过这部分代码</p><p><strong><code>!</code> 操作符的作用是强制解析</strong></p><p>也可以在后面加上 <code>!</code> 操作符，来表示这个 <code>Optional</code> 是肯定有值的，例如我们在声明时已经给了初始值，或者在使用之前已经确定对该变量进行过赋值</p><div class="mdxCodeBlock_1zKU"><div class="codeBlockContent_actS"><div tabindex="0" class="prism-code language-swift codeBlock_tuNs thin-scrollbar"><div class="codeBlockLines_3uvA" style="color:#393A34;background-color:#f6f8fa"><div class="token-line" style="color:#393A34"><span class="token plain">var str1: String? = &quot;World!&quot;</span></div><div class="token-line" style="color:#393A34"><span class="token plain">let str2 = &quot;Hello&quot;</span></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block">
 </span></div><div class="token-line" style="color:#393A34"><span class="token plain">if (str1 != nil) { </span></div><div class="token-line" style="color:#393A34"><span class="token plain">      let out = str2 + str1!</span></div><div class="token-line" style="color:#393A34"><span class="token plain">      print(out)</span></div><div class="token-line" style="color:#393A34"><span class="token plain">}</span></div></div></div><button type="button" aria-label="Copy code to clipboard" class="copyButton_2GIj">Copy</button></div></div><p>虽然使用 <code>!</code> 可以时可以确定 <code>Optional</code> 不为空，但是还是要做判断以作保险</p><div class="mdxCodeBlock_1zKU"><div class="codeBlockContent_actS"><div tabindex="0" class="prism-code language-swift codeBlock_tuNs thin-scrollbar"><div class="codeBlockLines_3uvA" style="color:#393A34;background-color:#f6f8fa"><div class="token-line" style="color:#393A34"><span class="token plain">var str1: String?</span></div><div class="token-line" style="color:#393A34"><span class="token plain">let str2 = &quot;Hello&quot;</span></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block">
 </span></div><div class="token-line" style="color:#393A34"><span class="token plain">let out = str2 + str1!</span></div></div></div><button type="button" aria-label="Copy code to clipboard" class="copyButton_2GIj">Copy</button></div></div><p>上面这段代码是可以通过编译的，但是运行时则会报错，所以使用 <code>Optional</code> 时还是需要判断一下是否为空</p><p><strong><code>!</code> 操作符一定要对非空的变量值使用</strong></p><hr><h3><a aria-hidden="true" tabindex="-1" class="anchor" id="参考"></a>参考<a class="hash-link" href="#参考" title="Direct link to heading">#</a></h3><ul><li><a href="https://swift.bootcss.com/02_language_guide/01_The_Basics" target="_blank" rel="noopener noreferrer">Swift 编程语言中文教程</a> —— 可选类型</li><li><a href="https://www.jianshu.com/p/89a2afb82488" target="_blank" rel="noopener noreferrer">Swift中 ！和 ？的区别及使用</a></li></ul></div></article><div class="margin-vert--xl"><div class="row"><div class="col"><a href="https://github.com/rcxxx/docs/tree/master/docs/ios/swift/swift-optional.md" target="_blank" rel="noreferrer noopener"><svg fill="currentColor" height="1.2em" width="1.2em" preserveAspectRatio="xMidYMid meet" role="img" viewBox="0 0 40 40" class="iconEdit_2LL7"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div></div></div><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/docs/ios/ios-reference-data"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« ios 学习过程参考教程、网站、书籍等</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/docs/ios/swiftUI/swiftUI-show-web-pages"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">swiftUI 显示网页内容 »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_2xL- thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#-和--是啥" class="table-of-contents__link"><code>!</code> 和 <code>?</code> 是啥</a></li><li><a href="#参考" class="table-of-contents__link">参考</a></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">More</h4><ul class="footer__items"><li class="footer__item"><a href="https://sinnammanyo.cn/" target="_blank" rel="noopener noreferrer" class="footer__link-item">My Blog</a></li><li class="footer__item"><a href="https://github.com/rcxxx" target="_blank" rel="noopener noreferrer" class="footer__link-item">My GitHub</a></li><li class="footer__item"><a href="https://wiki.wildwolf.tech/" target="_blank" rel="noopener noreferrer" class="footer__link-item">机器人队知识库</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 🌈RCXXX. Built with Docusaurus.</div></div></div></footer></div>
-<script src="/docs/styles.61720e73.js"></script>
-<script src="/docs/runtime~main.25310cce.js"></script>
-<script src="/docs/main.52b30435.js"></script>
-<script src="/docs/1.2a87ec5c.js"></script>
-<script src="/docs/2.6f07626b.js"></script>
-<script src="/docs/100.173691da.js"></script>
-<script src="/docs/102.ea874c32.js"></script>
-<script src="/docs/935f2afb.dd752c37.js"></script>
-<script src="/docs/17896441.472c613d.js"></script>
-<script src="/docs/0d1350d9.191b9bb4.js"></script>
+<script src="/docs/styles.e720d90d.js"></script>
+<script src="/docs/runtime~main.36d3ac64.js"></script>
+<script src="/docs/main.30edd94a.js"></script>
+<script src="/docs/1.fac6d712.js"></script>
+<script src="/docs/2.f3d4cf03.js"></script>
+<script src="/docs/102.6bc5b48f.js"></script>
+<script src="/docs/104.c9b9a0b1.js"></script>
+<script src="/docs/935f2afb.4c82561f.js"></script>
+<script src="/docs/17896441.35be6597.js"></script>
+<script src="/docs/0d1350d9.a83a2b32.js"></script>
 </body>
 </html>
