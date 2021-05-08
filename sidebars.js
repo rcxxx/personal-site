@@ -24,6 +24,7 @@ module.exports = {
           'cc/cc-classes-and-objects-2',
           'cc/cc-generic-and-template',
           'cc/cc-generic-and-template-2',
+          'cc/cc-classes-virtual-function',
         ],
       },
       
