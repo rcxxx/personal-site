@@ -1,7 +1,7 @@
 ---
 id: ros-bag-to-pcd
 title: ROS 中解析 bag 包中的点云数据
-sidebar_label: bag_to_pcd
+sidebar_label: extract pcd file in bag
 ---
 
 ## ROS bag

@@ -1,7 +1,7 @@
 --- 
 id: ros-pcl-topic
 title: ROS 发布和订阅 pcl 话题消息
-sidebar_label: pcl-topic
+sidebar_label: pcl pub&sub topic
 ---
 
 ## PCL 在 ros 中的数据类型
