@@ -307,6 +307,16 @@ module.exports = {
         ],
       },
 
+      {
+        type: "category",
+        label: "point-cloud-segmentation",
+        collapsed: true,
+        items: [
+          'ros/ros-point-cloud/segmentation/ros-point_cloud_object_segemntation_references',
+          'ros/ros-point-cloud/segmentation/ros-traditional_point_cloud_object_segmentation',
+        ],
+      },
+
     ],
   },
 
