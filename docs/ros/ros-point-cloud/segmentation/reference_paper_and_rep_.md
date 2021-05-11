@@ -26,7 +26,7 @@ sidebar_label: 参考文献 & 源码
 
 ### Fast Multi-Pass 3D Point Segmentation Based on a Structured MeshGraph for Ground Vehicles
 - **`paper` 📰 :[Fast Multi-Pass 3D Point Segmentation Based on a Structured MeshGraph for Ground Vehicles](https://www.researchgate.net/publication/328455207_Fast_Multi-Pass_3D_Point_Segmentation_Based_on_a_Structured_Mesh_Graph_for_Ground_Vehicles)**
-- **`GitHub repository` 📦 :[](none)**
+- **`GitHub repository` 📦 :**
 - **`blog & others` 📝 :（知乎）[一种基于激光雷达硬件结构的障碍物聚类分割方法](https://zhuanlan.zhihu.com/p/333670101)**
 ---
 
