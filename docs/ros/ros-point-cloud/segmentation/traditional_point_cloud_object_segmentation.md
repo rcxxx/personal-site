@@ -20,9 +20,27 @@ sidebar_label: Segmentation
 - **`GitHub repository` 📦 :[versatran01/cloud2range](https://github.com/versatran01/cloud2range)**
 
 需要用到的参数如下
+``` cpp
+/*-- range image shape 4500x64 --*/
+int n_beams_        = 64;
+int range_img_cols_ = 4500;   // 360 / 0.08
+
+double min_range_   = 0.0;
+double max_range_   = 120.0;
+
+double min_angle_   = -(26.9*0.5);  // -1/2 Vertical FOV
+double max_angle_   =  (26.9*0.5);  //  1/2 Vertical FOV
+
+double angular_resolution_h_ = 0.08;   // azimuth
+double angular_resolution_v_ = 0.4;    // altitude
 ```
 
-```
+通过点云中每个点的位置信息 $(x,y,z)$ 可以求出每个点相对于传感器的位置在 `range image` 中的对应点
+
+- 计算点 $p$ 的 $arctan(\frac{z}{\sqrt{x^2 + y^2}})$ 可以求出 $p$ 相对于 xy 平面的角度，即垂直方向的角度
+- 点 $p$ 的 $arctan(\frac{y}{x})$ 则表示水平方向的角度，这里要把角度转换到 $[0, 2\pi]$ 之间，即当 $y<0$ 的时 $angle = angle + 2\pi$
+- 计算点到传感器的距离 $range = \sqrt{x^2 + y^2 + z^2}$
+
 
 
 ## references
