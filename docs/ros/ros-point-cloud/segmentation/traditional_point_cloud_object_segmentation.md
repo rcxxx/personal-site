@@ -41,7 +41,12 @@ double angular_resolution_v_ = 0.4;    // altitude
 - 点 $p$ 的 $arctan(\frac{y}{x})$ 则表示水平方向的角度，这里要把角度转换到 $[0, 2\pi]$ 之间，即当 $y<0$ 的时 $angle = angle + 2\pi$
 - 计算点到传感器的距离 $range = \sqrt{x^2 + y^2 + z^2}$
 
+## clustering
 
+参考文章开源的代码进行聚类，仓库地址
+- **`GitHub repository` 📦 :[PRBonn/depth_clustering](https://github.com/PRBonn/depth_clustering)**
+
+主要看这几个文件中的实现
 
 ## references
 
