@@ -48,5 +48,60 @@ double angular_resolution_v_ = 0.4;    // altitude
 
 主要看这几个文件中的实现
 
+文中用广度优先搜索（BFS）的方式对图像进行标记，将一个点存入队列中，只要队列非空，就搜索该点的 N4领域 中的点，如果领域中的点与该点满足一定条件，就将领域中满足条件的点加入队列，然后继续搜索，如果遇到已经被标记过的点或者是无效的点则直接跳过，这样只用一次循环就能将 range image 中的所有点都进行标记，标记的过程其实也就是完成了 clustering 的任务
+
+关键代码如下
+``` c++
+void labelOneComponent(uint16_t label_, const PixelCoord& start_){
+  // BFS
+  std::queue<PixelCoord> labeling_queue;
+  labeling_queue.push(start_);
+
+  // 如果队列非空，删除队列头的点，添加领域的点到队列中
+  size_t max_queue_size = 0;
+  while(!labeling_queue.empty()) {
+    max_queue_size = std::max(max_queue_size, labeling_queue.size());
+    // 复制队列头的点
+    const PixelCoord current_point = labeling_queue.front();
+    // pop
+    labeling_queue.pop();
+
+    unsigned short current_label = labelAt(current_point);
+    if(current_label > 0) {
+      // label > 0 则表示该点已经被标记了，跳过
+      continue;
+    }
+    // 标记未被标记过的点
+    SetLabel(current_point, label_);
+
+    // 校验深度
+    auto current_depth = depthAt(current_point);
+    if (current_depth < 0.001f) {
+      // 深度信息有误，不添加到队列
+      continue;
+    }
+
+    for(const auto& step : _neighborhood){
+      PixelCoord neighbor_point = current_point + step;
+      if (neighbor_point.row < 0 || neighbor_point.row >= _label_image.rows) {
+        // 超出边界
+        continue;
+      }
+
+      neighbor_point.col = wrapCols(neighbor_point.col);
+      unsigned short neighbor_label = labelAt(neighbor_point);
+      if(neighbor_label > 0){
+        // 已标记
+        continue;
+      }
+
+      if (){
+        labeling_queue.push(neighbor);
+      }
+    }
+  }
+}
+```
+
 ## references
 
