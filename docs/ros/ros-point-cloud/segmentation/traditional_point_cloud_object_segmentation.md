@@ -46,62 +46,26 @@ double angular_resolution_v_ = 0.4;    // altitude
 参考文章开源的代码进行聚类，仓库地址
 - **`GitHub repository` 📦 :[PRBonn/depth_clustering](https://github.com/PRBonn/depth_clustering)**
 
-主要看这几个文件中的实现
+这篇文章使用的方法是使用广度优先搜索（BFS）来对一个 `range image` 进行聚类，在源码中，这个 `range image` 以 `OpenCV Mat` 的形式表示，也就是一个二维的矩阵，文中的方法一次遍历就能完成聚类，相当于遍历了所有点云的点，复杂度为 $O(N)$
 
-文中用广度优先搜索（BFS）的方式对图像进行标记，将一个点存入队列中，只要队列非空，就搜索该点的 N4领域 中的点，如果领域中的点与该点满足一定条件，就将领域中满足条件的点加入队列，然后继续搜索，如果遇到已经被标记过的点或者是无效的点则直接跳过，这样只用一次循环就能将 range image 中的所有点都进行标记，标记的过程其实也就是完成了 clustering 的任务
+![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/ubuntu/ros/multi_pass_segemntation/pictures/pictures/fig-03.png)
 
-关键代码如下
-``` c++
-void labelOneComponent(uint16_t label_, const PixelCoord& start_){
-  // BFS
-  std::queue<PixelCoord> labeling_queue;
-  labeling_queue.push(start_);
+- 具体实现为源码中 **[`src/image_labelers/linear_image_labeler.h`](https://github.com/PRBonn/depth_clustering/blob/master/src/image_labelers/linear_image_labeler.h)** 中的 **`ComputeLabels()`** 函数
 
-  // 如果队列非空，删除队列头的点，添加领域的点到队列中
-  size_t max_queue_size = 0;
-  while(!labeling_queue.empty()) {
-    max_queue_size = std::max(max_queue_size, labeling_queue.size());
-    // 复制队列头的点
-    const PixelCoord current_point = labeling_queue.front();
-    // pop
-    labeling_queue.pop();
+遍历时进行 `BFS` 操作，先将起始点填入队列中，如果这个队列非空，那么就创建一个队首点的复制，然后执行 `pop` 操作，判断这个点的 `N4领域（即上下左右相邻的四个点）` 上的点是否与当前点满足一定的条件，并将满足条件的相邻点添加到队列中，如此循环，当循环结束时图像中对应的点已经打上了相同的标签，遍历过程会跳过已经被标记过的点，并更新标签，如此在遍历结束时，整张图像都已经被打上了不同的标签，即完成了聚类
 
-    unsigned short current_label = labelAt(current_point);
-    if(current_label > 0) {
-      // label > 0 则表示该点已经被标记了，跳过
-      continue;
-    }
-    // 标记未被标记过的点
-    SetLabel(current_point, label_);
+![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/ubuntu/ros/multi_pass_segemntation/pictures/fig-04.png)
 
-    // 校验深度
-    auto current_depth = depthAt(current_point);
-    if (current_depth < 0.001f) {
-      // 深度信息有误，不添加到队列
-      continue;
-    }
+- 具体实现为源码中 **[`src/image_labelers/linear_image_labeler.h`](https://github.com/PRBonn/depth_clustering/blob/master/src/image_labelers/linear_image_labeler.h)** 中的 **`LabelOneComponent()`** 函数
 
-    for(const auto& step : _neighborhood){
-      PixelCoord neighbor_point = current_point + step;
-      if (neighbor_point.row < 0 || neighbor_point.row >= _label_image.rows) {
-        // 超出边界
-        continue;
-      }
+判断相邻点是否满足的条件在文中有详细说明，通过手动设定一个阈值，并通过传感器返回的深度值，计算出两个点所连直线与第一个点的传感器光束直线的夹角，看这个夹角是否满足阈值
 
-      neighbor_point.col = wrapCols(neighbor_point.col);
-      unsigned short neighbor_label = labelAt(neighbor_point);
-      if(neighbor_label > 0){
-        // 已标记
-        continue;
-      }
+![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/ubuntu/ros/multi_pass_segemntation/pictures/fig-01.png)
 
-      if (){
-        labeling_queue.push(neighbor);
-      }
-    }
-  }
-}
-```
+![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/ubuntu/ros/multi_pass_segemntation/pictures/fig-02.png)
+
+- 具体实现为源码中 **[`src/image_labelers/diff_helpers/line_dist_diff.cpp`](https://github.com/PRBonn/depth_clustering/blob/master/src/image_labelers/diff_helpers/line_dist_diff.cpp)** 中的 **`LineDistDiff::DiffAt()`** 函数
+
 
 ## references
 

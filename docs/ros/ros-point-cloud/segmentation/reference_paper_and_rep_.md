@@ -14,8 +14,10 @@ sidebar_label: 参考文献 & 源码
 ---
 ### Fast Range Image-Based Segmentationof Sparse 3D Laser Scans for Online Operation
 - **`paper` 📰 :[Fast Range Image-Based Segmentationof Sparse 3D Laser Scans for Online Operation](https://www.researchgate.net/publication/311758635_Fast_range_image-based_segmentation_of_sparse_3D_laser_scans_for_online_operation)**
+- **`GitHub repository` 📦 :[PRBonn/depth_clustering](https://github.com/PRBonn/depth_clustering)**
+  - 这个仓库为作者的开源
 - **`GitHub repository` 📦 :[wangx1996/LIDAR-Segmentation-Based-on-Range-Image](https://github.com/wangx1996/LIDAR-Segmentation-Based-on-Range-Image)**
-- 这个仓库中又列举了他们方法所参考的文献，可以依次进行阅读学习
+  - 这个仓库参考了文中的方法，又列举了他们所参考的一些其他文献，可以依次进行阅读学习
 ---
 
 ### depth_clustre_ros

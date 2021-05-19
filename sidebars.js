@@ -303,7 +303,6 @@ module.exports = {
           'ros/ros-point-cloud/ros-bag-to-pcd',
           'ros/ros-point-cloud/ros-rosbag-play-rviz',
           'ros/ros-point-cloud/ros-pcl-topic',
-          'ros/ros-point-cloud/ros-multi_pass_segemntation',
         ],
       },
 
@@ -312,6 +311,7 @@ module.exports = {
         label: "point-cloud-segmentation",
         collapsed: true,
         items: [
+          'ros/ros-point-cloud/segmentation/ros-intrinsic_velodyne_pattern',
           'ros/ros-point-cloud/segmentation/ros-point_cloud_object_segemntation_references',
           'ros/ros-point-cloud/segmentation/ros-traditional_point_cloud_object_segmentation',
         ],

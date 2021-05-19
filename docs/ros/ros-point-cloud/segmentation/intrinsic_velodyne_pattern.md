@@ -1,19 +1,16 @@
 ---
-id: ros-multi_pass_segemntation
+id: ros-intrinsic_velodyne_pattern
 title: ' '
 sidebar_label: Multi Pass Segemntation
 ---
 
-# 有关一篇论文的复现工作
-论文地址：
-- [Fast Multi-Pass 3D Point Segmentation Based on a Structured Mesh Graph for Ground Vehicles](https://www.researchgate.net/publication/328455207_Fast_Multi-Pass_3D_Point_Segmentation_Based_on_a_Structured_Mesh_Graph_for_Ground_Vehicles)
+## 有关一种传感器固有问题的记录
+最近在看一篇文献时文中提到一种传感器的固有模式所带来的问题
 
-## `III PROPOSED METHOD`
+- **`paper` 📰 :[Fast Multi-Pass 3D Point Segmentation Based on a Structured MeshGraph for Ground Vehicles](https://www.researchgate.net/publication/328455207_Fast_Multi-Pass_3D_Point_Segmentation_Based_on_a_Structured_Mesh_Graph_for_Ground_Vehicles)**
 
-### `A. Intrinsic Velodyne Pattern`
+### `Intrinsic Velodyne Pattern`
 **velodyne lidar sensor**
-
-`velodyne` 是一个 `激光雷达` 厂商，感兴趣的话可以去了解
 
 文中所使用的传感器是 **[`velodyne HDL-64E`](https://velodynelidar.com/products/hdl-64e/)** ，在官网上有给出该传感器的一些参数（如下图），后续将会用到
 
@@ -23,7 +20,7 @@ sidebar_label: Multi Pass Segemntation
 
 ![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/ubuntu/ros/multi_pass_segemntation/paper-figure-01.png)
 
-这样理解可能不太直观，在大佬的引导下，在 `Rviz` 里查看了一个 `Velodyne` 传感器获取到的点云数据，大概长这样
+这样理解可能不太直观，在 `Rviz` 里查看了一个 `Velodyne` 传感器获取到的点云数据，大概长这样
 
 ![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/ubuntu/ros/multi_pass_segemntation/velodyne_bird_eye_view.png)
 
@@ -32,11 +29,6 @@ sidebar_label: Multi Pass Segemntation
 ![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/ubuntu/ros/multi_pass_segemntation/velodyne_bird_eye_view_edit.png)
 
 看起来就跟论文中图一样，到此才直观的理解了论文中这部分内容的意思
-
-### C. Mesh graph construction
-这部分的工作是直接从传感器数据构建一个无序的网格图，根据文中的内容，将会根据传感器的固定参数，以及传感器测量得到的参数，构建一个以 N4 邻域为参考的二维图像，通过同一束激光的连续测量值来创建水平边缘，通过所有波束和对应的参考波束之间的静态角度差来确定垂直边缘
-
-想要直接获取到雷达的原始数据进行处理比较困难，选择将雷达数据转换为点云数据后，再映射到 `range Image` 中处理。
 
 ## reference
 
