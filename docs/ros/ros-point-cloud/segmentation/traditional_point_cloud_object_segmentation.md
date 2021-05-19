@@ -48,7 +48,7 @@ double angular_resolution_v_ = 0.4;    // altitude
 
 这篇文章使用的方法是使用广度优先搜索（BFS）来对一个 `range image` 进行聚类，在源码中，这个 `range image` 以 `OpenCV Mat` 的形式表示，也就是一个二维的矩阵，文中的方法一次遍历就能完成聚类，相当于遍历了所有点云的点，复杂度为 $O(N)$
 
-![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/ubuntu/ros/multi_pass_segemntation/pictures/pictures/fig-03.png)
+![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/ubuntu/ros/multi_pass_segemntation/pictures/fig-03.png)
 
 - 具体实现为源码中 **[`src/image_labelers/linear_image_labeler.h`](https://github.com/PRBonn/depth_clustering/blob/master/src/image_labelers/linear_image_labeler.h)** 中的 **`ComputeLabels()`** 函数
 
