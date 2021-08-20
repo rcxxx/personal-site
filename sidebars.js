@@ -375,6 +375,7 @@ module.exports = {
 
     RoboMaster: [
       'robomaster/about-rm',
+      'robomaster/visual-group-learning-suggestions',
       {
         type: "category",
         label: "所努力的",
