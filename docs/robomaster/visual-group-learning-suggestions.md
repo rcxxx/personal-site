@@ -23,20 +23,25 @@ std::cout<< "Hello Wild Wolf";
 
 建议参考书籍:
 1. 《C++ 程序设计基础（第五版）》- 电子工业出版社
+
 ![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/gcu_robot/%E5%B9%B2%E8%B4%A7%E6%95%B4%E7%90%86/C%2B%2B%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80.png)
 
 2. 《C++ Primer（第五版）》- 电子工业出版社
+
 ![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/gcu_robot/%E5%B9%B2%E8%B4%A7%E6%95%B4%E7%90%86/C%2B%2BPrimer.png)
 
 3. 《C++ Primer Plus（第六版）》- 人民邮电出版社 [[pdf]](https://www.roboxx.ltd/wp-content/uploads/2021/08/C-Primer-Plus%E7%AC%AC6%E7%89%88%E4%B8%AD%E6%96%87%E7%89%88.pdf)
+
 ![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/gcu_robot/%E5%B9%B2%E8%B4%A7%E6%95%B4%E7%90%86/C%2B%2BPrimer-Plus.png)
 
 **重点掌握C++的基本语法、数组、函数、指针等，面对对象部分的知识也非常重要，建议仔细学习和理解，上述参考书都需要时常翻阅**
 
 1. 《深入理解 C++11 C++11新特性解析与应用》
+
 ![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/gcu_robot/%E5%B9%B2%E8%B4%A7%E6%95%B4%E7%90%86/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3C%2B%2B11%E6%96%B0%E7%89%B9%E6%80%A7%E8%A7%A3%E6%9E%90%E4%B8%8E%E5%BA%94%E7%94%A8.png)
 
 2. 《STL源码剖析》
+
 ![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/gcu_robot/%E5%B9%B2%E8%B4%A7%E6%95%B4%E7%90%86/STL%E6%BA%90%E7%A0%81%E5%89%96%E6%9E%90.png)
 
 **上述两本参考书对于C++知识的巩固与提升会有很大的帮助，非常建议阅读**
@@ -49,6 +54,7 @@ std::cout<< "Hello Wild Wolf";
 
 - **Python**
 > Python拥有大量的现成库可供调用，可以提高视觉算法的开发测试速度，算法组有时也会使用到这门语言
+
 ![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/gcu_robot/%E5%B9%B2%E8%B4%A7%E6%95%B4%E7%90%86/python.jpg)
 
 ``` py
@@ -83,9 +89,11 @@ print("Hello visual group");
 - 《程序员的数学》- 人民邮电出版社 结城浩
 - 《程序员的数学 2 概率统计》- 人民邮电出版社 结城浩
 - 《程序员的数学 3 线性代数》- 人民邮电出版社 结城浩
+
 ![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/gcu_robot/%E5%B9%B2%E8%B4%A7%E6%95%B4%E7%90%86/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%95%B0%E5%AD%A6.png)
 
 - 《数学之美》
+
 ![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/gcu_robot/%E5%B9%B2%E8%B4%A7%E6%95%B4%E7%90%86/%E6%95%B0%E5%AD%A6%E4%B9%8B%E7%BE%8E.png)
 
 --- 
@@ -100,6 +108,7 @@ print("Hello visual group");
 
 Linux 学习参考书籍推荐
 1. 《鸟哥的 Linux 私房菜 第四版》- 人民邮电出版社
+
 ![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/gcu_robot/%E5%B9%B2%E8%B4%A7%E6%95%B4%E7%90%86/%E9%B8%9F%E5%93%A5%E7%9A%84Linux%E7%A7%81%E6%88%BF%E8%8F%9C-%E7%AC%AC%E5%9B%9B%E7%89%88.png)
 
 **重点学习 Linux 系统的基本操作，如各种文件的操作，环境配置等等，刚开始学习肯定会有很多不理解，会有很多次的重头再来，不要因为这个抱怨，不断的跌倒才会变得更强**
@@ -124,6 +133,7 @@ Linux 学习参考书籍推荐
 ## 编译工具
 - CMake
 > CMake 是 Cross platform Make 的缩写，它是一个开源且跨平台的构建系统，适合复杂的大型项目维护，实验室目前主要使用 CMake 作为主要编译工具
+
 ![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/gcu_robot/%E5%B9%B2%E8%B4%A7%E6%95%B4%E7%90%86/CMake.png)
 
 学习建议:
