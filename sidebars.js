@@ -460,6 +460,19 @@ module.exports = {
     },
   ],
 
+  '3D打印': [
+    {
+      type: "category",
+      label: "3D打印延时摄影",
+      collapsed: true,
+      items: [
+        'project/3D打印延时摄影/raspberry-pi-octoprint',
+        'project/3D打印延时摄影/gphoto2-get-capture',
+        'project/3D打印延时摄影/octoprint-octolapse-auto-snapshot',
+      ],
+    },
+  ],
+
   '奇怪的知识': [
     {
       type: "category",
