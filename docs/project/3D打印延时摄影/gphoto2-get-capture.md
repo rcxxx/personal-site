@@ -6,7 +6,7 @@ sidebar_label: 控制相机
 
 > gPhoto2 是一个免费软件，提供了在类 Unix 系统上通过终端来控制数码相机的功能
 
-### 安装 `gphoto2`
+### 安装 **`gphoto2`**
 - 在 `Ubuntu/debian` 系统中
 
 ``` shell
