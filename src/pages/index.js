@@ -6,6 +6,13 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
+import Bilibili_icon from "@site/static/img/icons/social_icons/bilibili@48x.svg";
+import GitHub_icon from "@site/static/img/icons/social_icons/github@48x.svg";
+import Weibo_icon from "@site/static/img/icons/social_icons/weibo@48x.svg";
+import Wechat_icon from "@site/static/img/icons/social_icons/wechat@48x.svg";
+import _qq_icon from "@site/static/img/icons/social_icons/qq@48x.svg";
+
+
 const features = [
   {
     title: '正常的知识',
@@ -113,7 +120,8 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      // title={`Hello from ${siteConfig.title}`}
+      title={``}
       description="Description will go into a meta tag in <head />">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
@@ -131,6 +139,62 @@ function Home() {
           </div>
         </div>
       </header>
+      
+      <header className={styles.socialIcon}>
+        <link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
+        <div>
+          <ul className={styles.social_icon_custom_ul}>
+            {/* github icon */}
+            <li className={styles.social_icon_custom_li}>
+              <a className={styles.social_icon_custom_li_a} href="https://github.com/rcxxx" target="_blank">
+                <GitHub_icon />
+              </a>
+            </li>
+            
+            {/* bilibili icon */}
+            <li className={styles.social_icon_custom_li}>
+              <a className={styles.social_icon_custom_li_a} href="https://space.bilibili.com/373512714" target="_blank">
+                <Bilibili_icon />
+              </a>
+            </li>
+            
+            {/* bilibili icon */}
+            {/* <li className={styles.social_icon_custom_li}>
+              <a className={styles.social_icon_custom_li_a} href="https://weibo.com/u/7343768621">
+                <Weibo_icon />
+              </a>
+            </li> */}
+            
+            <li className={styles.social_icon_custom_li}>
+              <a className={styles.social_icon_custom_li_a}>
+                <div className={`dropdown ${styles.dropdown} dropdown--hoverable`}>
+                  <_qq_icon />
+                  <img
+                    width="50%"
+                    className={`dropdown__menu ${styles.dropdown__menu}`}
+                    src={useBaseUrl("../../static/img/qr_code/qq.jpg")}
+                  />
+                </div>
+              </a>
+            </li>
+            
+            <li className={styles.social_icon_custom_li}>
+              <a className={styles.social_icon_custom_li_a}>
+                <div className={`dropdown ${styles.dropdown} dropdown--hoverable`}>
+                  <Wechat_icon />
+                  <img
+                    width="50%"
+                    className={`dropdown__menu ${styles.dropdown__menu}`}
+                    src={useBaseUrl("../../static/img/qr_code/wechat.jpg")}
+                  />
+                </div>
+              </a>
+            </li>
+          
+          </ul>
+        </div>
+      </header>
+      
       <main>
         {features && features.length > 0 && (
           <section className={styles.features}>
