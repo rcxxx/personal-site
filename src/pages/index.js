@@ -172,7 +172,7 @@ function Home() {
                   <img
                     width="50%"
                     className={`dropdown__menu ${styles.dropdown__menu}`}
-                    src={useBaseUrl("../../static/img/qr_code/qq.jpg")}
+                    src={useBaseUrl("https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/qr-code/wechat.jpg")}
                   />
                 </div>
               </a>
@@ -185,7 +185,7 @@ function Home() {
                   <img
                     width="50%"
                     className={`dropdown__menu ${styles.dropdown__menu}`}
-                    src={useBaseUrl("../../static/img/qr_code/wechat.jpg")}
+                    src={useBaseUrl("https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/qr-code/wechat.jpg")}
                   />
                 </div>
               </a>
