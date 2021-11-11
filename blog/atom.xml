@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/rcxxx/docs/blog</id>
-    <title>Rcxxx's Notes Blog</title>
+    <title>Rcxxx's Site Blog</title>
     <updated>2015-10-25T23:29:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://github.com/rcxxx/docs/blog"/>
-    <subtitle>Rcxxx's Notes Blog</subtitle>
+    <subtitle>Rcxxx's Site Blog</subtitle>
     <icon>https://github.com/rcxxx/docs/img/icons/lzumi-icon-05-128x128.jpg</icon>
 </feed>
