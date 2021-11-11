@@ -111,6 +111,23 @@ sudo pip3 install sh
 ### 设置切片软件
 测试时我们选用了一些其他的切片软件，所导出的 GCode 不能正确的被 **`Octolapse`** 识别，所以不能实现单反相机的延时摄影
 
+根据 **`Octolapse`** 网站上的教程选用 **`PrusaSlicer`** 进行模型的切片，并对切片软件进行相应的设置
+
+打开 **`PrusaSlicer`** 软件设置，将设置模式修改为专家模式，大部分设置根据自己打印机的相应参数进行设置
+
+有几个关键须要设置的地方
+
+**`打印设置` 部分**
+- **`输出选项`** 中，勾选 **`详细 G 代码`**
+![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/3D%E6%89%93%E5%8D%B0%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1/%E8%AF%A6%E7%BB%86G%E4%BB%A3%E7%A0%81.png)
+
+**`打印机设置` 部分**
+- **`自定义 G-code`** 中，在 **`图层更改G代码之前`** 框中的 **`;[layer_z]`** 之前加入自定义 G 代码，例如 —— **`G4 P700`**，这个 G 代码会在后续用做打印时拍照的触发指令，需要与 **`Octolapse`** 的设置保持一致
+![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/3D%E6%89%93%E5%8D%B0%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1/%E8%87%AA%E5%AE%9A%E4%B9%89G-code.png)
+
+- **`挤出机/喷头`** 中，需要关闭回抽时擦拭的功能，这个选项会导致喷头挤不出料，一定要关闭
+![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/3D%E6%89%93%E5%8D%B0%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1/%E8%87%AA%E5%AE%9A%E4%B9%89G-code.png)
+
 ### 测试打印
 
 

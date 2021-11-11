@@ -399,28 +399,41 @@ module.exports = {
     ],
   },
 
-  "🎮":[
-    {
-      type: "category",
-      label: "就知道玩",
-      collapsed: true,
-      items: [
-        
-      ],
-    },
-  ],
+  'life': {
+    "🎮就知道玩":[
+      'life/play/go-out-and-play',
+      {
+        type: "category",
+        label: "出去玩",
+        collapsed: true,
+        items: [
+            
+        ],
+      },
+    ],
 
-  "🍻":[
-    'life/foods/always-eating',
-    {
-      type: "category",
-      label: "就知道吃",
-      collapsed: true,
-      items: [
-        
-      ],
-    },
-  ],
+    "🍻就知道吃":[
+      'life/foods/always-eating',
+      {
+        type: "category",
+        label: "小吃",
+        collapsed: true,
+        items: [
+            
+        ],
+      },
+
+      // {
+      //   type: "category",
+      //   label: "分类",
+      //   collapsed: true,
+      //   items: [
+            
+      //   ],
+      // },
+    ],
+  },
+  
 
   'Project': {
 

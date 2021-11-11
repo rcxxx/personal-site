@@ -2,8 +2,8 @@ const math = require('remark-math');
 const katex = require('rehype-katex');
 
 module.exports = {
-    title: "Rcxxx's Notes",
-    tagline: '个人学习笔记',
+    title: "Rcxxx's Site",
+    tagline: '',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/icons/lzumi-icon-05-128x128.jpg',    
@@ -99,7 +99,7 @@ module.exports = {
             label: '🎮',
             position: 'right',
             items: [
-              { label: '就知道玩',},              
+              { label: '就知道玩🏔️', to: '/docs/docs/life/play/go-out-and-play'},              
             ],
           },
 
@@ -107,7 +107,7 @@ module.exports = {
             label: '🍻',
             position: 'right',
             items: [
-              { label: '就知道吃', to: '/docs/docs/life/foods/always-eating'},          
+              { label: '就知道吃🍉', to: '/docs/docs/life/foods/always-eating'},          
             ],
           },
           

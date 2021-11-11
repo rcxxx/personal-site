@@ -50,6 +50,7 @@ const features = [
   {
     title: '吃货看这里',
     imageUrl: 'img/icons/re-01.png',
+    jump: 'docs/life/foods/always-eating',
     description: (
       <>
         喜欢的美食收录
@@ -57,15 +58,16 @@ const features = [
     ),
   },
 
-//   {
-//     title: 'page5',
-//     imageUrl: 'img/icons/re-02.png',
-//     description: (
-//       <>
-//         暂时没想好写什么
-//       </>
-//     ),
-//   },
+  {
+    title: '一起出去玩',
+    imageUrl: 'img/icons/re-02.png',
+    jump: 'docs/life/play/go-out-and-play',
+    description: (
+      <>
+        不走心的游记
+      </>
+    ),
+  },
 
 //   {
 //     title: 'page6',
