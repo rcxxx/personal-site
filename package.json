@@ -20,7 +20,8 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "rehype-katex": "^4.0.0",
-    "remark-math": "^3.0.1"
+    "remark-math": "^3.0.1",
+    "yarn": "^1.22.17"
   },
   "browserslist": {
     "production": [

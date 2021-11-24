@@ -434,7 +434,6 @@ module.exports = {
     ],
   },
   
-
   'Project': {
 
     "无人驾驶": [
@@ -493,6 +492,17 @@ module.exports = {
       collapsed: true,
       items: [
         'Useless-knowledge/about-code/ascii-art',
+      ],
+    },
+  ],
+
+  'Nvidia': [
+    {
+      type: "category",
+      label: "Jeston-Nano",
+      collapsed: true,
+      items: [
+        'nvidia/jeston-nano/jetson-nano-start',
       ],
     },
   ],

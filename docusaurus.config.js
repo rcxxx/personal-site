@@ -57,7 +57,6 @@ module.exports = {
               { label: '数据结构', to: '/docs/docs/data-structures/大话数据结构/data-structures-introduction'},
               { label: '设计模式', to: '/docs/docs/design-pattern/design-pattern-UML-class-diagram'},
               { label: 'ios', to: '/docs/docs/ios/ios-about-xcode'},
-              
             ],
           },
 
@@ -70,7 +69,7 @@ module.exports = {
               { label: 'pytorch', to: '/docs/docs/pytorch/about-pytorch'},
               { label: 'tensorflow', },
               { label: 'yolo', to: '/docs/docs/yolo/yolov5-start'},
-              
+              {label: 'jeston-nano', to:'/docs/docs/nvidia/jeston-nano/jetson-nano-start'},
             ],
           },
 

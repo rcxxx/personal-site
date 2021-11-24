@@ -10496,6 +10496,11 @@ yargs@^13.3.2:
     y18n "^4.0.0"
     yargs-parser "^13.1.2"
 
+yarn@^1.22.17:
+  version "1.22.17"
+  resolved "https://registry.npmmirror.com/yarn/download/yarn-1.22.17.tgz?cache=0&sync_timestamp=1636534305503&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fyarn%2Fdownload%2Fyarn-1.22.17.tgz#bf910747d22497b573131f7341c0e1d15c74036c"
+  integrity sha1-v5EHR9Ikl7VzEx9zQcDh0Vx0A2w=
+
 yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
