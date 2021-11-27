@@ -472,7 +472,7 @@ module.exports = {
     },
   ],
 
-  '3D打印': [
+  '2506': [
     {
       type: "category",
       label: "3D打印延时摄影",
@@ -483,7 +483,20 @@ module.exports = {
         'project/3D打印延时摄影/octoprint-octolapse-auto-snapshot',
       ],
     },
+
+    {
+        type: "category",
+        label: "猫粮机",
+        collapsed: true,
+        items: [
+          'project/猫粮机/Cat-food-machine-based-on-MegFLow',
+        ],
+      },
+
+    
   ],
+
+
 
   '奇怪的知识': [
     {
@@ -503,6 +516,7 @@ module.exports = {
       collapsed: true,
       items: [
         'nvidia/jeston-nano/jetson-nano-start',
+        'nvidia/jeston-nano/jetson-nano-archiconda',
       ],
     },
   ],

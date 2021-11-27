@@ -8,7 +8,19 @@ sidebar_label: 猫粮机
 
 家里的猫咪有固定的进食地点，但是流浪猫没有，并且流浪猫比较怕人，人为去喂不太现实，为了方便投喂，并且不浪费猫粮，从咸鱼淘了一个猫粮机来简单改装一下，使其能够检测到猫咪后自动进行投喂
 
+### `MegFlow`
+
 刚巧，旷视开源的 `MegFlow` 框架可以很轻松的实现猫咪的检测，将整个改造变得很简单
 [![](https://github.com/MegEngine/MegFlow/raw/master/logo.png)](https://github.com/MegEngine/MegFlow)
 - [https://github.com/MegEngine/MegFlow](https://github.com/MegEngine/MegFlow)
+
+按照 **[文档](https://megflow.readthedocs.io/zh_CN/latest/how-to-build-and-run/run-in-15-minutes.zh.html)** 安装运行环境后，运行下示例程序，结果如下
+
+### 修改源码，自定义功能
+
+接下来要修改一些源码，将原本上传图片或是视屏的服务更改为本地的相机输入
+
+根据文档的教程：**[HOW TO USE —— Config](https://megflow.readthedocs.io/zh_CN/latest/how-to-add-my-service/appendix-A-graph-definition.zh.html)**
+
+修改相应的 `.toml` 文件
 
