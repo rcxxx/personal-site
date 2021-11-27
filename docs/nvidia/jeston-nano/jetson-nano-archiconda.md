@@ -12,6 +12,15 @@ sidebar_label: Jetson Nano Archiconda
 
 下载之后就正常的当做 `conda` 来使用即可
 
+``` shell
+cd Downloads/
+wget https://github.com/Archiconda/build-tools/releases/download/0.2.3/Archiconda3-0.2.3-Linux-aarch64.sh
+sh Archiconda3-0.2.3-Linux-aarch64.sh
+```
+
+安装后即可正常使用
+
+
 ## 参考
 - **[`Archiconda/build-tools`](https://github.com/Archiconda/build-tools)**
 - **[在Jetson Nano (TX1/TX2)上使用Anaconda与PyTorch 1.1.0](https://zhuanlan.zhihu.com/p/64868319)**

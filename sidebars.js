@@ -516,7 +516,10 @@ module.exports = {
       collapsed: true,
       items: [
         'nvidia/jeston-nano/jetson-nano-start',
+        'nvidia/jeston-nano/jetson-nano-stats',
         'nvidia/jeston-nano/jetson-nano-archiconda',
+        'nvidia/jeston-nano/jetson-nano-install-pytorch',
+        'nvidia/jeston-nano/jetson-nano-install-opencv',
       ],
     },
   ],
