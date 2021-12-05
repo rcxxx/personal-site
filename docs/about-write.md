@@ -86,5 +86,64 @@ values={[
 <TabItem value="banana">This is a banana 🍌</TabItem>
 </Tabs>
 
+### Code Tabs
+
+<Tabs
+defaultValue="js"
+values={[
+    {label: 'JavaScript', value: 'js'},
+    {label: 'Python', value: 'py'},
+    {label: 'Java', value: 'java'},
+]}>
+<TabItem value="js">
+
+```js
+function helloWorld() {
+  console.log('Hello, world!');
+}
+```
+
+</TabItem>
+<TabItem value="py">
+
+```py
+def hello_world():
+  print 'Hello, world!'
+```
+
+</TabItem>
+<TabItem value="java">
+
+```java
+class HelloWorld {
+  public static void main(String args[]) {
+    System.out.println("Hello, World");
+  }
+}
+```
+
+</TabItem>
+</Tabs>
+
+## BrowserWindow
+
+``` md
+import BrowserWindow from '@site/src/components/BrowserWindow';
+
+<BrowserWindow minHeight={240} url="http://localhost:3000">
+
+# 这是一个浏览器窗口
+
+</BrowserWindow>
+```
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+
+<BrowserWindow minHeight={240} url="http://localhost:3000">
+
+# 这是一个浏览器窗口
+
+</BrowserWindow>
+
 ## 参考
 [Markdown Features](https://www.docusaurus.cn/docs/markdown-features)

@@ -9,8 +9,18 @@
 
 - [nodejs下载](https://nodejs.org/en/download/)
 
+``` shell
+sudo tar -xJvf node-$VERSION-$DISTRO.tar.xz -C /usr/local/lib/nodejs
+sudo ln -s /usr/local/lib/nodejs/bin/node /usr/local/bin/node
+sudo ln -s /usr/local/lib/nodejs/bin/npm /usr/local/bin/npm
+sudo ln -s /usr/local/lib/nodejs/bin/npx /usr/local/bin/npx
+```
+
 - [yarn下载](https://classic.yarnpkg.com/en/)
 
+``` shell
+npm install --global yarn
+```
 ## Installation
 
 ``` bash

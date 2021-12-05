@@ -88,9 +88,10 @@ module.exports = {
             label: '👾project',
             position: 'left',
             items: [
-              { label: '毕业设计', to: '/docs/docs/project/毕业设计/graduation-project'},
+              // { label: '毕业设计', to: '/docs/docs/project/毕业设计/graduation-project'},
               { label: '车道线检测', to: '/docs/docs/project/车道线检测/about-lane-detection'},
               { label: '3D打印延时摄影', to: '/docs/docs/project/3D打印延时摄影/raspberry-pi-octoprint'},
+              { label: '猫粮机', to: '/docs/docs/project/猫粮机/Cat-food-machine-based-on-MegFLow'},
             ],
           },
 
