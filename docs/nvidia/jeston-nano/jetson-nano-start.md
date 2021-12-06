@@ -129,3 +129,6 @@ NoDisplay=true
 这里推荐下载 **[Todesk](https://www.todesk.com/linux.html)** 来进行远程桌面链接，不用配置，但对网络连接要求比较高，可以根据自己需求选择
 :::
 
+## 参考
+- **[Jetson Nano 开发者套件入门](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#intro)**
+- **[Jetson nano通过vnc远程桌面控制](https://www.yahboom.com/build.html?id=2500&cid=301)**

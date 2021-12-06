@@ -1,14 +1,17 @@
 ---
 id: Cat-food-machine-based-on-MegFLow
-title: 基于旷视开源框架MegFlow的猫粮机
-sidebar_label: 猫粮机
+title: 基于旷视开源框架MegFlow的猫粮机(1)
+sidebar_label: 猫粮机(1)
 ---
 
 import BrowserWindow from '@site/src/components/BrowserWindow';
+import BVideo from "@site/src/components/BVideo";
 
 <BrowserWindow>
 
 ### 视频演示
+
+<BVideo src="" bsrc=""/>
 
 ### 项目地址
 - [rcxxx/MegFlow —— cat_feeders](https://github.com/rcxxx/MegFlow/tree/master/flow-python/examples/cat_feeders)
@@ -16,13 +19,16 @@ import BrowserWindow from '@site/src/components/BrowserWindow';
 </BrowserWindow>
 
 
-
 舍友的朋友要把猫咪送过来帮忙照顾几天，这样家里就一下子有了两只猫，投喂两只猫咪的工作量并不是 “x2” 那么简单，所谓懒是科技进步的阶梯，因为懒，所以准备做一个自动投喂的猫粮机，并不是定时定量的自动投喂，那样还需要买一个猫粮机，并且还需要经常设置和修改猫粮机喂食的时间以及数量，并且两只猫的话，就会出现更多的问题
 
 于是我们准备做一个能够知道碗里还有没有猫粮，并且能够认识两只猫咪并进行分别的自动投喂的猫粮机，简单的执行逻辑如下
 
 
-其他的都比较好办，关键是怎么让猫粮机认识两只猫，根据最初的想法，可以通过AI算法对两只猫咪进行检测和区分，相关的开源资料非常丰富，于是在 `GitHub` 里搜索相关资料，还真找到了一个非常易用的框架，并且有一个叫 **[`猫猫围栏`](https://megflow.readthedocs.io/zh_CN/latest/built-in-applications/cat_finder.html)** 的 **Demo** 可以实现类似的功能，先来了解一下 `MegFlow` 这个框架
+其他的都比较好办，关键是怎么让猫粮机认识两只猫，根据最初的想法，可以通过AI算法对两只猫咪进行检测和区分，相关的开源资料非常丰富，于是在 `GitHub` 里搜索相关资料，还真找到了一个非常易用的框架，并且有一个叫 **[`猫猫围栏`](https://megflow.readthedocs.io/zh_CN/latest/built-in-applications/cat_finder.html)** 的 **Demo** 可以实现类似的功能
+
+![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/MegFlow-Cat_feeder/megflow-wechat.png)
+
+先来了解一下 `MegFlow` 这个框架
 ## `MegFlow`
 
 > MegFlow 提供快速视觉应用落地流程，最快 15 分钟搭建起视频分析服务 ...
@@ -156,7 +162,7 @@ self._model.inference(warmup_data)
 
 
 ### 读取视频进行测试
-这里视屏以及猫咪的特征注册我都以及提前做了
+这里视频以及猫咪的特征注册我都以及提前做了
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -192,9 +198,7 @@ megflow_run -c cat_feeders/cat_feeder_gpu.toml -p cat_feeders/
 
 成功区分出两只猫猫，程序部分基本完工，后续将继续增加投喂策略，以及设置相关参数的功能
 
-### 新环境的配置
-由于想让猫粮机长时间工作，不能只将程序跑在工作用的电脑上
-
 ## 参考
 - **[`MegEngine/MegFlow`](https://github.com/MegEngine/MegFlow)**
 - **[`MegEngine/MegEngine`](https://github.com/MegEngine/MegEngine)**
+- **[MegFlow 之 15 分钟 x86 CPU + GPU平台推理服务部署：在线视频流检测报警](https://githubmemory.com/repo/yuenshome/yuenshome.github.io/issues/136)**

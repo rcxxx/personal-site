@@ -142,8 +142,29 @@ import BrowserWindow from '@site/src/components/BrowserWindow';
 <BrowserWindow minHeight={240} url="http://localhost:3000">
 
 # 这是一个浏览器窗口
+## 这里是内容
 
 </BrowserWindow>
+
+## 内嵌 Bilibili 视频
+
+``` shell
+import BVideo from "@site/src/components/BVideo";
+
+<BVideo src="" bsrc=""/>
+```
+- `src` 中放 `Bilibili` 分享视频的嵌入代码
+- `bsrc` 中放视频的网页 `url`
+
+import BVideo from "@site/src/components/BVideo";
+
+<BrowserWindow>
+
+<BVideo src="https://www.bilibili.com/bangumi/play/ep374668?from=search&seid=5105236372748998047&spm_id_from=333.337.0.0" bsrc="https://www.bilibili.com/bangumi/play/ep374668?from=search&seid=5105236372748998047&spm_id_from=333.337.0.0"/>
+
+</BrowserWindow>
+
+- 这里我两个都放了网页的 `url` 效果就没那么好了······
 
 ## 参考
 [Markdown Features](https://www.docusaurus.cn/docs/markdown-features)
