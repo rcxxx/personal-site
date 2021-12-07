@@ -11,7 +11,7 @@ import BVideo from "@site/src/components/BVideo";
 
 ### 视频演示
 
-<BVideo src="" bsrc=""/>
+<BVideo src="//player.bilibili.com/player.html?aid=464633616&bvid=BV1rL41177o8&cid=456006994&page=1" bsrc="https://www.bilibili.com/video/BV1rL41177o8/"/>
 
 </BrowserWindow>
 
