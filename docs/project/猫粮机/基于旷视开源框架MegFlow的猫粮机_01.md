@@ -66,7 +66,7 @@ import BVideo from "@site/src/components/BVideo";
 :::
 
 #### YOLOX 目标检测，标记出所有猫猫
-这里要用到的模型等都能到 **[`👉模型下载`](https://megflow.readthedocs.io/zh_CN/latest/download-models.zh.html)** 找到
+这里要用到的模型等都能到 **[`👉模型下载`](https://megflow.readthedocs.io/zh_CN/latest/download-models.zh.html)** 找到，此项目的 `Release` 中也上传了 **[`模型文件👉`](https://github.com/rcxxx/MegFlow/releases/tag/aarch64-whl)**
 
 - **[`det.py`](https://github.com/rcxxx/MegFlow/tree/master/flow-python/examples/cat_feeders/det.py)**
 
