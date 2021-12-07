@@ -74,8 +74,15 @@ module.exports = {
 
     ], 
 
-    Python: [
-
+    "Python": [
+      {
+        type: "category",
+        label: "Package",
+        collapsed: true,
+        items: [
+          'py/python-serial',
+        ],
+      },
     ], 
 
     "数据结构与算法": [

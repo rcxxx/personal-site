@@ -53,7 +53,7 @@ module.exports = {
             position: 'left',
             items: [
               { label: 'C/C++', to: '/docs/docs/cc/cc-classes-and-objects'},
-              { label: 'Python', },
+              { label: 'Python', to: '/docs/docs/py/python-serial'},
               { label: '数据结构', to: '/docs/docs/data-structures/大话数据结构/data-structures-introduction'},
               { label: '设计模式', to: '/docs/docs/design-pattern/design-pattern-UML-class-diagram'},
               { label: 'ios', to: '/docs/docs/ios/ios-about-xcode'},
