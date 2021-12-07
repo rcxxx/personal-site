@@ -485,9 +485,9 @@ module.exports = {
       label: "3D打印延时摄影",
       collapsed: true,
       items: [
+        'project/3D打印延时摄影/octoprint-octolapse-auto-snapshot',
         'project/3D打印延时摄影/raspberry-pi-octoprint',
         'project/3D打印延时摄影/gphoto2-get-capture',
-        'project/3D打印延时摄影/octoprint-octolapse-auto-snapshot',
       ],
     },
 
@@ -497,6 +497,8 @@ module.exports = {
         collapsed: true,
         items: [
           'project/猫粮机/Cat-food-machine-based-on-MegFLow',
+          'project/猫粮机/Cat-food-machine-based-on-MegFLow_02',
+
         ],
       },
 
@@ -527,6 +529,9 @@ module.exports = {
         'nvidia/jeston-nano/jetson-nano-archiconda',
         'nvidia/jeston-nano/jetson-nano-install-pytorch',
         'nvidia/jeston-nano/jetson-nano-install-opencv',
+        'nvidia/jeston-nano/jetson-nano-gpio',
+        'nvidia/jeston-nano/jetson-nano-megflow-megengine',
+
       ],
     },
   ],

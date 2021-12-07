@@ -4,6 +4,17 @@ title: octolapse 插件实现自动拍照
 sidebar_label: 延时摄影
 ---
 
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import BVideo from "@site/src/components/BVideo";
+
+<BrowserWindow>
+
+### 视频演示
+
+<BVideo src="//player.bilibili.com/player.html?aid=464633616&bvid=BV1rL41177o8&cid=456006994&page=1" bsrc="https://www.bilibili.com/video/BV1rL41177o8/"/>
+
+</BrowserWindow>
+
 ### 准备工作
 
 实现延时摄影之前，需要先完成两件事
