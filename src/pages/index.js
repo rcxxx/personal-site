@@ -8,7 +8,6 @@ import styles from './styles.module.css';
 
 import Bilibili_icon from "@site/static/img/icons/social_icons/bilibili@48x.svg";
 import GitHub_icon from "@site/static/img/icons/social_icons/github@48x.svg";
-import Weibo_icon from "@site/static/img/icons/social_icons/weibo@48x.svg";
 import Wechat_icon from "@site/static/img/icons/social_icons/wechat@48x.svg";
 import _qq_icon from "@site/static/img/icons/social_icons/qq@48x.svg";
 
@@ -140,6 +139,7 @@ function Home() {
             </Link>
           </div>
         </div>
+        {/* <img src={useBaseUrl('')} /> */}
       </header>
       
       <header className={styles.socialIcon}>
@@ -159,13 +159,6 @@ function Home() {
                 <Bilibili_icon />
               </a>
             </li>
-            
-            {/* bilibili icon */}
-            {/* <li className={styles.social_icon_custom_li}>
-              <a className={styles.social_icon_custom_li_a} href="https://weibo.com/u/7343768621">
-                <Weibo_icon />
-              </a>
-            </li> */}
             
             <li className={styles.social_icon_custom_li}>
               <a className={styles.social_icon_custom_li_a}>

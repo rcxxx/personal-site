@@ -16,8 +16,8 @@ module.exports = {
   'Linux': {
     'Ubuntu': [
       { 
-        type: "",
-        label: "",
+        type: "category",
+        label: "software",
         collapsed: true,
         items: [
           

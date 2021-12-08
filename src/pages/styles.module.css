@@ -10,12 +10,10 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-color: #4b4b4bef;
 }
 
 .getStarted {
-  background-color: #25f073;
-  border-radius: 25px;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 966px) {
@@ -28,6 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 5px 10px 15px;
 }
 
 .features {
@@ -38,8 +37,8 @@
 }
 
 .featureImage {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
 }
 
 .socialIcon {
@@ -51,6 +50,7 @@
 }
 
 .social_icon_custom_ul {
+  padding-left: 0%;
   display: flex;
 }
 

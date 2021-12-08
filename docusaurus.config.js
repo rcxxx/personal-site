@@ -18,7 +18,7 @@ module.exports = {
         disableSwitch: false,
         respectPrefersColorScheme: true,
         switchConfig: {
-          darkIcon: '🌜',
+          darkIcon: '🌑️',
           lightIcon: '🌞',
           // React inline style object
           // see https://reactjs.org/docs/dom-elements.html#style
