@@ -13,6 +13,19 @@ module.exports = {
     }
   ],
 
+  'Linux': {
+    'Ubuntu': [
+      { 
+        type: "",
+        label: "",
+        collapsed: true,
+        items: [
+          
+        ],
+      }
+    ],
+  },
+
   '💻': {
     "C/C++": [
       {
@@ -209,6 +222,7 @@ module.exports = {
         label: "常用方法",
         collapsed: true,
         items: [
+          'opencv/opencv-waitKey',
           'opencv/opencv-roi',
           'opencv/opencv-hough-transform',
         ],
