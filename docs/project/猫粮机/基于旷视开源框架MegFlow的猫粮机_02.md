@@ -35,3 +35,9 @@ import BVideo from "@site/src/components/BVideo";
 考虑到猫猫的健康，需要时长调整它们的进食量，瘦的要多吃点，胖的要少吃点······
 
 考虑到投喂的参数是变化的，所以准备增加一个串口屏来实时调整相应的投喂参数，比如投喂量，投喂次数，时间间隔等参数
+
+大致控制逻辑如下
+
+![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/MegFlow-Cat_feeder/%E7%8C%AB%E7%B2%AE%E6%9C%BA%E5%96%82%E9%A3%9F%E6%9C%BA%E5%88%B6.png)
+
+

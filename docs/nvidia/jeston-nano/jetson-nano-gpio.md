@@ -114,7 +114,11 @@ if __name__ == '__main__':
     main()
 ```
 
-<iframe src="https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/jeston/nano/jetson-nano-gpio-output.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+- 运行效果
+
+![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/jeston/nano/jetson-nano-gpio-output.mp4)
+
+![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/jeston/nano/jetson-nano-gpio-output.mp4)
 
 </BrowserWindow>
 
@@ -125,3 +129,4 @@ if __name__ == '__main__':
 - **[如何配置和使用Jetson Nano GPIO](https://blog.csdn.net/lifeisme666/article/details/109728437)**
 - **[Jetson NANO GPIO---允许其他用户访问](https://www.it610.com/article/1290481682784264192.htm)**
 - **[NVIDIA Jetson Nano J41 Header Pinout](https://www.jetsonhacks.com/nvidia-jetson-nano-j41-header-pinout/)**
+- **[Jetson Nano系列教程3：GPIO](https://www.waveshare.net/study/portal.php?mod=view&aid=882)**
