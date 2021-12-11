@@ -116,9 +116,9 @@ if __name__ == '__main__':
 
 - 运行效果
 
-![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/jeston/nano/jetson-nano-gpio-output.mp4)
+![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/jeston/nano/jetson-nano-gpio-output_0v.jpg)
 
-![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/jeston/nano/jetson-nano-gpio-output.mp4)
+![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/jeston/nano/jetson-nano-gpio-output_3-3v.jpg)
 
 </BrowserWindow>
 

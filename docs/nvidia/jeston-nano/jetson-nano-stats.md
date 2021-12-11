@@ -1,7 +1,7 @@
 ---
 id: jetson-nano-stats
 title: Jetson Nano stats
-sidebar_label: jtop
+sidebar_label: Jtop
 ---
 
 我在使用 `Jetson Nano` 的时候，想像安装了 `GPU` 的设备一样查看相关信息时

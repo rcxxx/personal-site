@@ -23,10 +23,8 @@
 }
 
 .buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 5px 10px 15px;
+  
 }
 
 .features {
@@ -52,6 +50,7 @@
 .social_icon_custom_ul {
   padding-left: 0%;
   display: flex;
+  justify-content: space-between;
 }
 
 .social_icon_custom_li {

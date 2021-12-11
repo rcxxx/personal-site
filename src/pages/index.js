@@ -126,8 +126,13 @@ function Home() {
       description="Description will go into a meta tag in <head />">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
+          <img src="img/personal/computer.png" className="computer-img" alt="0 error(s),0 warning(s)"></img>
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <p className="hero__subtitle">Hi I'm rcxxx 👋</p>
+          <p className="hero__subtitle">very interested in CV & ML & DL</p>
+          <p className="hero__subtitle">🤔 I'm studying, but I'm lazy</p>
+          <p className="hero__subtitle">There are some documents recorded here</p>
           <div className={styles.buttons}>
             <Link
               className={clsx(
@@ -135,11 +140,10 @@ function Home() {
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/')}>
-              🌈Portal
+              Docs 🌈Portal
             </Link>
           </div>
         </div>
-        {/* <img src={useBaseUrl('')} /> */}
       </header>
       
       <header className={styles.socialIcon}>

@@ -2,7 +2,7 @@ const math = require('remark-math');
 const katex = require('rehype-katex');
 
 module.exports = {
-    title: "Rcxxx's Site",
+    title: "Rcxxx's Personal Site",
     tagline: '',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
@@ -96,29 +96,22 @@ module.exports = {
           },
 
           {
-            label: '🎮',
+            label: '🍻🎮',
             position: 'right',
             items: [
-              { label: '就知道玩🏔️', to: '/docs/docs/life/play/go-out-and-play'},              
-            ],
-          },
-
-          {
-            label: '🍻',
-            position: 'right',
-            items: [
-              { label: '就知道吃🍉', to: '/docs/docs/life/foods/always-eating'},          
+              { label: '就知道吃🍉', to: '/docs/docs/life/foods/always-eating'},
+              { label: '就知道玩🏔️', to: '/docs/docs/life/play/go-out-and-play'},        
             ],
           },
           
-          // {to: 'blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/rcxxx/docs',
-            label: '本站源码',
             position: 'right',
+            className: 'header-github-link',
           },
         ],
       },
+      
       footer: {
         style: 'dark',
         links: [
