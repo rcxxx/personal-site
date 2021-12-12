@@ -33,12 +33,13 @@ module.exports = {
       hideableSidebar: true,
       navbar: {
         hideOnScroll: true, // 自动隐藏导航栏
-        title: "Home",
+        title: "",
         logo: {
           alt: 'My Site Logo',
           // src: 'img/logo.svg',
           // src: 'img/lzumi-icon-05-128x128.svg',
-          src: 'static/img/icons/konosuba-01.png',
+          // src: 'img/icons/konosuba-01.png',
+          src: 'img/personal/ctrl-cv.png'
         },
         items: [
           {
