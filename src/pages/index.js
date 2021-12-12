@@ -15,7 +15,7 @@ import _qq_icon from "@site/static/img/icons/social_icons/qq@48x.svg";
 const features = [
   {
     title: '正常的知识',
-    imageUrl: 'img/icons/C1.png',
+    imageUrl: 'static/img/icons/C1.png',
     jump: 'docs/',
     description: (
       <>
@@ -26,7 +26,7 @@ const features = [
 
   {
     title: '奇怪的知识',
-    imageUrl: 'img/icons/C2.png',
+    imageUrl: 'static/img/icons/C2.png',
     jump: 'docs/Useless-knowledge/about-code/ascii-art',
     description: (
       <>
@@ -37,7 +37,7 @@ const features = [
 
   {
     title: 'To Do🎯',
-    imageUrl: 'img/icons/lzumi-06.png',
+    imageUrl: 'static/img/icons/lzumi-06.png',
     jump: 'todo-List/',
     description: (
       <>
@@ -48,7 +48,7 @@ const features = [
 
   {
     title: '吃货看这里',
-    imageUrl: 'img/icons/re-01.png',
+    imageUrl: 'static/img/icons/re-01.png',
     jump: 'docs/life/foods/always-eating',
     description: (
       <>
@@ -59,7 +59,7 @@ const features = [
 
   {
     title: '一起出去玩',
-    imageUrl: 'img/icons/re-02.png',
+    imageUrl: 'static/img/icons/re-02.png',
     jump: 'docs/life/play/go-out-and-play',
     description: (
       <>
@@ -70,7 +70,7 @@ const features = [
 
 //   {
 //     title: 'page6',
-//     imageUrl: 'img/icons/re-03.png',
+//     imageUrl: 'static/img/icons/re-03.png',
 //     description: (
 //       <>
 //         暂时没想好写什么
@@ -80,7 +80,7 @@ const features = [
 
 //   {
 //     title: 'page7',
-//     imageUrl: 'img/icons/konosuba-01.png',
+//     imageUrl: 'static/img/icons/konosuba-01.png',
 //     description: (
 //       <>
 //         暂时没想好写什么
@@ -90,7 +90,7 @@ const features = [
 
 //   {
 //     title: 'page8',
-//     imageUrl: 'img/icons/yourname-01.png',
+//     imageUrl: 'static/img/icons/yourname-01.png',
 //     description: (
 //       <>
 //         暂时没想好写什么
@@ -126,7 +126,7 @@ function Home() {
       description="Description will go into a meta tag in <head />">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
-          <img src="img/personal/computer.png" className="computer-img" alt="0 error(s),0 warning(s)"></img>
+          <img src="static/img/personal/computer.png" className="computer-img" alt="0 error(s),0 warning(s)"></img>
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <p className="hero__subtitle">Hi I'm rcxxx 👋</p>
