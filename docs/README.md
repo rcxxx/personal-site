@@ -29,7 +29,7 @@ slug: /
 #### 驱动力
 - 什么是你热爱并愿意为之奋斗的下去的，回看所记录的，能记起初心
 
-![](https://raw.githubusercontent.com/rcxxx/my-img/main/img/IMG_0613.JPG)
+![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/rcxxx/OK.jpg)
 
 export const Highlight = ({children, color}) => ( <span style={{
     backgroundColor: color,
