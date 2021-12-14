@@ -28,7 +28,7 @@ import BVideo from "@site/src/components/BVideo";
 - `MegEngine` 也需要安装 `aarch64` 版本的 `.whl`
 
 详细的安装过程放在这里👇
-- **[Jetson Nano Install MegFlow && MegEngine](./../../nvidia/jeston-nano/jetson-nano-MegFlow-MegEngine.md)**
+<!-- - **[Jetson Nano Install MegFlow && MegEngine]()** -->
 
 ## 猫粮机的功能控制
 
