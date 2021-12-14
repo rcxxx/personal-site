@@ -126,13 +126,16 @@ class HelloWorld {
 </Tabs>
 
 ## BrowserWindow
-
+- 相关组件位于 **[`@site/src/components/BrowserWindow`](https://github.com/rcxxx/personal-site/tree/master/src/components/BrowserWindow)**
+- 参考自官方站点源码
+- 
 ``` md
 import BrowserWindow from '@site/src/components/BrowserWindow';
 
 <BrowserWindow minHeight={240} url="http://localhost:3000">
 
 # 这是一个浏览器窗口
+
 
 </BrowserWindow>
 ```
@@ -147,6 +150,9 @@ import BrowserWindow from '@site/src/components/BrowserWindow';
 </BrowserWindow>
 
 ## 内嵌 Bilibili 视频
+
+- 相关组件位于 **[`@site/src/components/BVideo`](https://github.com/rcxxx/personal-site/tree/master/src/components/BVideo)**
+- 参考自 **[`https://zxuqian.cn/`](https://zxuqian.cn/)**
 
 ``` shell
 import BVideo from "@site/src/components/BVideo";
@@ -167,4 +173,4 @@ import BVideo from "@site/src/components/BVideo";
 - 这里我两个都放了网页的 `url` 效果就没那么好了······
 
 ## 参考
-[Markdown Features](https://www.docusaurus.cn/docs/markdown-features)
+- **[Markdown Features](https://www.docusaurus.cn/docs/markdown-features)**

@@ -16,9 +16,9 @@ sidebar_label: 搭建
 我所用系统是 **`Windows`** ，如果是 **`Linux`** 或是 **`Mac`** 用户，建议对比其他教程进行安装
 - 安装步骤可能有区别外，配置部分应该是一样的
 ### 安装所需环境
-#### nodejs >= 10.15.1
+#### nodejs >= 14
 - [nodejs下载](https://nodejs.org/en/download/)
-#### yarn >= 1.5
+#### yarn >= 1.5 
 - [yarn下载](https://classic.yarnpkg.com/en/)
 
 ### 创建站点
@@ -65,19 +65,20 @@ import TabItem from '@theme/TabItem';
 由于我只是想搭建个人知识库，因为已经搭建好了[个人博客](https://sinnammanyo.cn/)，所以 **`docusaurus.config.js`** 中的 **`presets`** 被我设置成这样
   ``` js title="docusaurus.config.js"
   presets: [
-    [
+      [
       '@docusaurus/preset-classic',
       {
-        docs: {
-          path: "./docs",
-          routeBasePath: "/docs",
+
+          docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-        },
-        theme: {
+          editUrl: "https://github.com/rcxxx/docs/tree/master",
+          },
+
+          theme: {
           customCss: require.resolve('./src/css/custom.css'),
-        },
+          },
       },
-    ],
+      ],
   ],
   ```
 - 删除了 **`blog`** 页面，只保留 **`Docs`**
@@ -101,8 +102,7 @@ import TabItem from '@theme/TabItem';
       },
     ],
   },
-  ```
-
+  ``` 
 #### 修改一些站点的标签
 - **`navbar`** 栏中也有一些属性需要设置
   - **`title`** 页面左上角的标题 —— 可以设置logo，具体见[文档](https://v2.docusaurus.io/docs/theme-classic)
@@ -111,8 +111,8 @@ import TabItem from '@theme/TabItem';
 - 更多个性化的配置可以根据文档进行配置
 - 简洁至上
 
-### [将站点部署到GitHub](https://sinnammanyo.cn/WikiByRcxxx/docs/about-deploy)
+### [将站点部署到GitHub](https://sinnammanyo.cn/personal-site/docs/about-deploy)
 
 ## 参考
-- [使用 Docusaurus 搭建个人博客](https://www.zxuqian.cn/deploy-a-docusaurus-site)
+- **[使用 Docusaurus 搭建个人博客](https://www.zxuqian.cn/deploy-a-docusaurus-site)**
 

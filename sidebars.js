@@ -1,5 +1,5 @@
 module.exports = {
-  '📌site': [
+  '🚩site': [
     'README',
     {
       type: "category",
@@ -27,38 +27,46 @@ module.exports = {
         {
           type: "category",
           label: "面对对象",
+          link: {
+            type: 'doc',
+            id: 'computer/programming/cc/Object-Oriented/cc-object-oriented',
+          },
           collapsed: true,
-          // link: {
-          //   type: 'doc',
-          //   id: 'cc/cc-classes-and-objects',
-          // },
           items: [
-            'computer/programming/cc/cc-classes-and-objects',
-            'computer/programming/cc/cc-classes-and-objects-2',
-            'computer/programming/cc/cc-generic-and-template',
-            'computer/programming/cc/cc-generic-and-template-2',
-            'computer/programming/cc/cc-classes-virtual-function',
+            'computer/programming/cc/Object-Oriented/cc-classes-and-objects',
+            'computer/programming/cc/Object-Oriented/cc-classes-and-objects-2',
+            'computer/programming/cc/Object-Oriented/cc-generic-and-template',
+            'computer/programming/cc/Object-Oriented/cc-generic-and-template-2',
+            'computer/programming/cc/Object-Oriented/cc-classes-virtual-function',
           ],
         },
         {
           type: "category",
           label: "C++11",
+          link: {
+            type: 'doc',
+            id: 'computer/programming/cc/11/cc-11',
+          },
           collapsed: true,
           items: [
-            'computer/programming/cc/cc-11-unified-init',
-            'computer/programming/cc/cc-11-auto',
-            'computer/programming/cc/cc-11-nullptr',
-            'computer/programming/cc/cc-11-using',
-            'computer/programming/cc/cc-11-new-for',
-            'computer/programming/cc/cc-11-auto-ptr',
-            'computer/programming/cc/cc-11-lambda',
-            'computer/programming/cc/cc-11-files-and-exceptions',
-            'computer/programming/cc/cc-11-scope-enum',
+            'computer/programming/cc/11/cc-11-unified-init',
+            'computer/programming/cc/11/cc-11-auto',
+            'computer/programming/cc/11/cc-11-nullptr',
+            'computer/programming/cc/11/cc-11-using',
+            'computer/programming/cc/11/cc-11-new-for',
+            'computer/programming/cc/11/cc-11-auto-ptr',
+            'computer/programming/cc/11/cc-11-lambda',
+            'computer/programming/cc/11/cc-11-files-and-exceptions',
+            'computer/programming/cc/11/cc-11-scope-enum',
           ],
         },
         {
           type: "category",
           label: "More Effective C++",
+          link: {
+            type: 'doc',
+            id: 'computer/programming/cc/effective_cc/effective_cc',
+          },
           collapsed: true,
           items: [
             'computer/programming/cc/effective_cc/distinguish-pointers-reference',
@@ -69,7 +77,7 @@ module.exports = {
           label: "boost",
           collapsed: true,
           items: [
-            'computer/programming/cc/cc-boost-install',
+            'computer/programming/cc/boost/cc-boost-install',
           ],
         },
         // {
@@ -458,6 +466,10 @@ module.exports = {
           type: "category",
           label: "RoboCon",
           collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'computer/robot/robocon/about-rc',
+          },
           items: [
             'computer/robot/robocon/about-rc',
           ],
@@ -466,8 +478,11 @@ module.exports = {
           type: "category",
           label: "RoboMaster",
           collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'computer/robot/robomaster/about-rm',
+          },
           items: [
-            'computer/robot/robomaster/about-rm',
             'computer/robot/robomaster/visual-group-learning-suggestions',
             'computer/robot/robomaster/rm-2018-buff-simulation',
             //'computer/robot/robomaster/rm-2019-armor',
@@ -489,6 +504,14 @@ module.exports = {
       collapsed: true,
       items: [
         'life/play/go-out-and-play',
+        {
+          type: "category",
+          label: 'LEGO',
+          collapsed: true,
+          items: [
+            'life/play/LEGO/koenigsegg-76900',
+          ],
+        }
       ],
     },
     {

@@ -138,10 +138,10 @@ GIT_USER=<GITHUB_USERNAME> yarn deploy
       if: github.event_name != 'push'
       runs-on: ubuntu-latest
       steps:
-        - uses: actions/checkout@v1
-        - uses: actions/setup-node@v1
+        - uses: actions/checkout@v2
+        - uses: actions/setup-node@v2
           with:
-            node-version: '12.x'
+            node-version: '14.x'
         - name: Test Build
           run: |
             if [ -e yarn.lock ]; then
@@ -156,10 +156,10 @@ GIT_USER=<GITHUB_USERNAME> yarn deploy
       if: github.event_name != 'pull_request'
       runs-on: ubuntu-latest
       steps:
-        - uses: actions/checkout@v1
-        - uses: actions/setup-node@v1
+        - uses: actions/checkout@v2
+        - uses: actions/setup-node@v2
           with:
-            node-version: '12.x'
+            node-version: '14.x'
         - name: Add key to allow access to repository
           env:
             SSH_AUTH_SOCK: /tmp/ssh_agent.sock
@@ -201,4 +201,9 @@ GIT_USER=<GITHUB_USERNAME> yarn deploy
 等待 **Git Action** 执行完毕，就可以在网页上看到你的站点了
 
 ## 参考
-[Docusaurus 中文文档](https://www.docusaurus.cn/docs/deployment)
+- **[Docusaurus 中文文档](https://www.docusaurus.cn/docs/deployment)**
+- **[Docusaurus 的 GitHub 操作](https://evantay.com/blog/docusaurus-gh-action/)**
+- **[Docusaurus 配置 GitHub Action 自动发布](https://blog.alanwei.com/blog/2021/03/21/docusaurus-github-deploy/)**
+- **[docusaurus搭建博客，利用GitHub Actions自动部署GitHub Pages](https://juejin.cn/post/6936846407051509774)**
+- **[GitHub Actions](https://docs.github.com/en/actions)**
+- **[GitHub Actions 入门教程](https://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html)**
