@@ -16,7 +16,7 @@ const features = [
   {
     title: '正常的知识',
     imageUrl: 'img/icons/C1.png',
-    jump: 'docs/',
+    to: 'docs/',
     description: (
       <>
         每天以🐢的速度增长
@@ -27,7 +27,7 @@ const features = [
   {
     title: '奇怪的知识',
     imageUrl: 'img/icons/C2.png',
-    jump: 'docs/Useless-knowledge/about-code/ascii-art',
+    to: 'docs/Useless-knowledge/about-code/ascii-art',
     description: (
       <>
         多得就像代码里的🐛
@@ -38,7 +38,7 @@ const features = [
   {
     title: 'To Do🎯',
     imageUrl: 'img/icons/lzumi-06.png',
-    jump: 'todo-List/',
+    to: 'todo-List/',
     description: (
       <>
         Rcxxx's To Do List
@@ -49,7 +49,7 @@ const features = [
   {
     title: '吃货看这里',
     imageUrl: 'img/icons/re-01.png',
-    jump: 'docs/life/foods/always-eating',
+    to: 'docs/life/foods/always-eating',
     description: (
       <>
         喜欢的美食收录
@@ -60,7 +60,7 @@ const features = [
   {
     title: '一起出去玩',
     imageUrl: 'img/icons/re-02.png',
-    jump: 'docs/life/play/go-out-and-play',
+    to: 'docs/life/play/go-out-and-play',
     description: (
       <>
         不走心的游记
@@ -99,7 +99,7 @@ const features = [
 //   },
 ];
 
-function Feature({imageUrl, title, description, jump}) {
+function Feature({imageUrl, title, description, to}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
     <div className={clsx('col col--4', styles.feature)}>
@@ -109,7 +109,7 @@ function Feature({imageUrl, title, description, jump}) {
         </div>
       )}
       <div className="text--center">
-        <a href={jump}><h3>{title}</h3></a>
+        <a href={to}><h3>{title}</h3></a>
       </div>
       <div className="text--center"><p>{description}</p></div>
     </div>
