@@ -20,7 +20,39 @@ sh Archiconda3-0.2.3-Linux-aarch64.sh
 
 安装后即可正常使用
 
+### 使用补充
+修改 `~/.bashrc` 实现启动终端时询问是否启用 `conda` 环境
+
+``` bash
+# # >>> MODIFIED conda initialize >>>
+
+# !! MOD !! ask user if they wish to use miniconda
+read -p "Use conda for python3? [y/n]" condaAnswer
+echo "$condaAnswer"
+if [ "$condaAnswer" = "y" ]; then  
+
+    # !! Contents within this block are managed by 'conda init' !!
+    __conda_setup="$('/home/pete/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+    if [ $? -eq 0 ]; then
+        eval "$__conda_setup"
+    else
+        if [ -f "/home/pete/miniconda3/etc/profile.d/conda.sh" ]; then
+            . "/home/pete/miniconda3/etc/profile.d/conda.sh"
+        else
+            export PATH="/home/pete/miniconda3/bin:$PATH"
+        fi
+    fi
+    unset __conda_setup
+
+# !! MOD !! ask user if they wish to use miniconda
+fi
+# <<< conda initialize <<<
+```
+
+修改后新建终端将会询问是否启用 `conda` 环境
+
 
 ## 参考
 - **[`Archiconda/build-tools`](https://github.com/Archiconda/build-tools)**
 - **[在Jetson Nano (TX1/TX2)上使用Anaconda与PyTorch 1.1.0](https://zhuanlan.zhihu.com/p/64868319)**
+- [How to decide whether to use miniconda on ubuntu terminal startup](https://stackoverflow.com/questions/57030934/how-to-decide-whether-to-use-miniconda-on-ubuntu-terminal-startup)
