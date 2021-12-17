@@ -41,7 +41,7 @@ module.exports = {
           {
             to: 'docs/',
             position: 'left',
-            className: 'heafer-about-icon',
+            className: 'heafer-user-icon',
           },
           {
             type: 'dropdown',

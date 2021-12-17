@@ -1,0 +1,27 @@
+
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.book_box {
+  box-shadow: 0 0 8px #9facaf;
+}
+
+.book_block {
+ padding: 5px;
+}
+
+.book_cover {
+ padding-top: 10px;
+}
+
+.cover_img {
+  width: 150px;
+  height: 210px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

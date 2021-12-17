@@ -86,7 +86,7 @@ html[data-theme='dark'] .header-github-link:before {
   opacity: 0.6;
 }
 
-.heafer-about-icon:before {
+.heafer-user-icon:before {
   content: '';
   width: 24px;
   height: 24px;
@@ -94,7 +94,7 @@ html[data-theme='dark'] .header-github-link:before {
   background: url("../../static/img/icons/navbar_icons/user.svg")
     no-repeat;
 }
-.heafer-about-icon:hover {
+.heafer-user-icon:hover {
   opacity: 0.6;
 }
 

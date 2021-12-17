@@ -68,15 +68,16 @@ const features = [
     ),
   },
 
-//   {
-//     title: 'page6',
-//     imageUrl: 'img/icons/re-03.png',
-//     description: (
-//       <>
-//         暂时没想好写什么
-//       </>
-//     ),
-//   },
+  {
+    title: '书单',
+    imageUrl: 'img/icons/re-03.png',
+    to: 'book-list/',
+    description: (
+      <>
+        暂时没想好写什么
+      </>
+    ),
+  },
 
 //   {
 //     title: 'page7',
