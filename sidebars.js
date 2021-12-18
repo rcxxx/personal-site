@@ -108,6 +108,14 @@ module.exports = {
             'computer/programming/py/python-serial',
           ],
         },
+        {
+            type: "category",
+            label: "example",
+            collapsed: true,
+            items: [
+              'computer/programming/py/python-定时任务实现',
+            ],
+          },
       ],
     },
     // Data Structures

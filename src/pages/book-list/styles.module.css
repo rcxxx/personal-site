@@ -1,14 +1,25 @@
 
 .features {
   display: flex;
-  align-items: center;
   justify-content: center;
   padding: 2rem 0;
   width: 100%;
+  padding-top: 10px;
+}
+.book_category {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  width: 100%;
+  padding-top: 10px;
+  margin-bottom: 40px;
 }
 
 .book_box {
+  border-radius: 15px;
   box-shadow: 0 0 8px #9facaf;
+  width: 210px;
+  height: 360px;
 }
 
 .book_block {
@@ -24,4 +35,19 @@
   height: 210px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.category_col {
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.category_img {
+  position: relative;
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
