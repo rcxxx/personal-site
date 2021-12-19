@@ -45,13 +45,22 @@ module.exports = {
           },
           {
             type: 'dropdown',
-            label: '📚Docs',
+            label: '📝Docs',
             position: 'left',
             items: [
               {label: '💻 PC', to:'docs/category/devices'},
               {label: '⌨️ programming', to:'docs/category/C-C_plus_plus'},
               {label: '👀CV', to:'docs/category/OpenCV'},
               {label: '🎖️robot', to:'docs/category/RC-RM'},
+            ],
+          },
+          {
+            type: 'dropdown',
+            label: '📚书单',
+            position: 'left',
+            items: [
+              {label: '⌨️ 计算机类', to:'/cs-book-list'},
+              {label: '✒️ 文学类', to:'/book-list'},
             ],
           },
           {

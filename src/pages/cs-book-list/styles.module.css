@@ -4,7 +4,6 @@
   justify-content: center;
   padding: 2rem 0;
   width: 100%;
-  padding-top: 10px;
 }
 .book_category {
   display: flex;
@@ -18,8 +17,9 @@
 .book_box {
   border-radius: 15px;
   box-shadow: 0 0 8px #9facaf;
+  background-color: rgb(250, 255, 237);
   width: 210px;
-  height: 360px;
+  height: 320px;
 }
 
 .book_block {
@@ -50,4 +50,8 @@
   height: 48px;
   margin-left: 5px;
   margin-right: 5px;
+}
+.category_text {
+  font-size: 20px;
+  margin-left: 10px;
 }
