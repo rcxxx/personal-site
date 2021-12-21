@@ -74,9 +74,11 @@ sudo reboot
 `Jetson Nano` 有 `40PIN` 的 `GPIO` 接口提供四种预设模式 `BOARD`、`BCM`、`CVM` 和 `TEGRA_SOC`，其中 `BOARD` 和 `BCM` 常在 `Python` 中使用，开发板正面对应 `BOARD` 模式的编号，背面则对应 `BCM` 模式
 
 - **`BOARD`**
+
 ![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/jeston/nano/jetson-nano-J41-Header.png)
 
 - **`BCM`**
+
 ![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/jeston/nano/jetson-nano-J41-Header-BCM.png)
 
 ### Python API
