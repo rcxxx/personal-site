@@ -11,12 +11,29 @@ sidebar_label: 脚本中使用 sudo
 
 #### `echo` + `sudo -S`
 
-- `echo`
-- `sudo -S`
-
-```
+``` shell title="eg."
+#!/bin/bash
 echo "password" | sudo -S chmod ...
+
+exit 0
 ```
 - `"password"` 为你的用户密码
 
 就可以实现 `shell` 脚本中使用 `sudo` 权限
+
+#### `<<`
+当 `shell` 中出现 `<<` 时，会标识下一个词是一个分界符，分界符之后的内容都被当做输入，直到分界符的下一次出现
+
+``` shell title="eg."
+#!/bin/bash
+sudo -S chmod ... << EOF
+password
+EOF
+
+exit 0
+```
+- `"password"` 为你的用户密码
+
+## 参考
+- **[在shell脚本中使用sudo](https://www.cnblogs.com/telnetning/archive/2013/05/18/3084826.html)**
+- **[shell中的EOF用法](https://www.cnblogs.com/clemente/p/10668784.html)**

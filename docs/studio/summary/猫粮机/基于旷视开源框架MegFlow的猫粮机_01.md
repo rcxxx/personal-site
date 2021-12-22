@@ -138,7 +138,7 @@ self._model.inference(warmup_data)
 
 - **[`redis_search.py`](https://github.com/rcxxx/MegFlow/tree/master/flow-python/examples/cat_feeders/redis_search.py)**
 
-特征匹配后将生成对应 `track ID` 的 `result` 并打包进 msg['results']
+特征匹配后将生成对应 `track ID` 的 `result` 并打包进 `msg['results']`
 
 #### 根据特征的匹配结果标记相应的猫咪
 
