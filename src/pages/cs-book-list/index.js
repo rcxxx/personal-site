@@ -97,7 +97,7 @@ const list_ml_dl = [
   // },
 ];
 
-const list_code = [
+const list_cc = [
   {
     title: 'C++ Primer',
     Subtitle: '中文版',
@@ -138,6 +138,9 @@ const list_code = [
       </>
     ),
   },
+];
+
+const list_algorithm = [
   {
     title: '算法',
     Subtitle: ' - 第四版',
@@ -213,6 +216,39 @@ const list_linux = [
   },
 ];
 
+const list_math = [  
+  {
+    title: '程序员的数学',
+    Subtitle: '',
+    imageUrl: 'https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/book-list/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%95%B0%E5%AD%A6.jpg',
+    description: (
+      <>
+        ······
+      </>
+    ),
+  },
+  {
+    title: '程序员的数学',
+    Subtitle: ' - 概率统计',
+    imageUrl: 'https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/book-list/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%95%B0%E5%AD%A6-2.jpg',
+    description: (
+      <>
+        ······
+      </>
+    ),
+  },
+  {
+    title: '程序员的数学',
+    Subtitle: ' - 线性代数',
+    imageUrl: 'https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/book-list/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%95%B0%E5%AD%A6-3.jpg',
+    description: (
+      <>
+        ······
+      </>
+    ),
+  },
+];
+
 function Book({imageUrl, title, Subtitle, description, to}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
@@ -239,15 +275,30 @@ function Hello() {
     <Layout>
       <div className={clsx('row', styles.category_col)}>
         <div className={styles.category_img}><img src={useBaseUrl('img/icons/category_icons/cplusplus.svg')} /></div>
-        <div className={styles.category_img}><img src={useBaseUrl('img/icons/category_icons/Python.svg')} /></div>
-        <div className={styles.category_img}><img src={useBaseUrl('img/icons/category_icons/leetcode.svg')} /></div>
       </div>
       <main>
-        {list_code && list_code.length > 0 && (
+        {list_cc && list_cc.length > 0 && (
           <section className={styles.features}>
             <div className="container">
               <div className="row">
-                {list_code.map((props, idx) => (
+                {list_cc.map((props, idx) => (
+                  <Book key={idx} {...props} />
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+      </main>
+      <div className={clsx('row', styles.category_col)}>
+        <div className={styles.category_img}><img src={useBaseUrl('img/icons/category_icons/leetcode.svg')} /></div>
+        <div className={styles.category_img}><img src={useBaseUrl('img/icons/category_icons/算法库.svg')} /></div>
+      </div>
+      <main>
+        {list_algorithm && list_algorithm.length > 0 && (
+          <section className={styles.features}>
+            <div className="container">
+              <div className="row">
+                {list_algorithm.map((props, idx) => (
                   <Book key={idx} {...props} />
                 ))}
               </div>
@@ -267,6 +318,22 @@ function Hello() {
             <div className="container">
               <div className="row">
                 {list_linux.map((props, idx) => (
+                  <Book key={idx} {...props} />
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+      </main>
+      <div className={clsx('row', styles.category_col)}>
+        <div className={styles.category_img}><img src={useBaseUrl('img/icons/category_icons/185-maths.svg')} /></div>
+      </div>
+      <main>
+        {list_math && list_math.length > 0 && (
+          <section className={styles.features}>
+            <div className="container">
+              <div className="row">
+                {list_math.map((props, idx) => (
                   <Book key={idx} {...props} />
                 ))}
               </div>
