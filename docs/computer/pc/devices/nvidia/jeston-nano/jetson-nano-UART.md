@@ -60,6 +60,8 @@ systemctl disable nvgetty
 reboot
 ```
 
+然后需要重复其前面的步骤...
+
 ## 参考
 - **[Read & write permission ttyTHS1](https://forums.developer.nvidia.com/t/read-write-permission-ttyths1/81623)**
 - **[Nvidia Jetson Nano GPIO](https://sinnammanyo.cn/personal-site/docs/computer/pc/devices/nvidia/jeston-nano/jetson-nano-gpio)**
