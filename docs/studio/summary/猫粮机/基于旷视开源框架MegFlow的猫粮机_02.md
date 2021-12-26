@@ -1,7 +1,7 @@
 ---
 id: Cat-food-machine-based-on-MegFLow_02
 title: 基于旷视开源框架MegFlow的猫粮机(2)
-sidebar_label: 猫粮机(2)
+sidebar_label: 喂食策略
 ---
 
 import BrowserWindow from '@site/src/components/BrowserWindow';
@@ -111,6 +111,8 @@ t.start()
 
 ## 致谢
 感谢旷视科技的开发人员提供的技术支持，细致的问题解答~
+
+目前项目已开源到天元社区 **[Awesome MegEngine](https://github.com/MegEngine/awesome-megengine)**
 
 ## 参考
 - **[MegEngine/MegFlow](https://github.com/MegEngine/MegFlow)**

@@ -1,7 +1,7 @@
 ---
 id: Cat-food-machine-based-on-MegFLow
 title: 基于旷视开源框架MegFlow的猫粮机(1)
-sidebar_label: 猫粮机(1)
+sidebar_label: 猫咪检测与特征提取
 ---
 
 import BrowserWindow from '@site/src/components/BrowserWindow';
