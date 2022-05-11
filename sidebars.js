@@ -379,6 +379,20 @@ module.exports = {
         'computer/cv/ml-dl/yolo/yolov5-训练自建数据集',
       ],
     },
+
+    // RealSense
+    {
+      type: 'category',
+      label: 'RealSense',
+      link: {
+        type: 'generated-index',
+        slug: '/category/realsense',
+      },
+      collapsed: true,
+      items: [
+        'computer/cv/realsense/intel-realsense-start',
+      ],
+    },
     
     // Point Cloud
     {
