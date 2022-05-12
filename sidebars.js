@@ -391,6 +391,8 @@ module.exports = {
       collapsed: true,
       items: [
         'computer/cv/realsense/intel-realsense-start',
+        'computer/cv/realsense/intel-realsense-apriltag',
+        'computer/cv/realsense/intel-realsense-intrinsics',
       ],
     },
     
