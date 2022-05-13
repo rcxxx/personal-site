@@ -53,14 +53,14 @@ float fy = static_cast<float>(intrinsics.fy);
 float cx = static_cast<float>(intrinsics.ppx);
 float cy = static_cast<float>(intrinsics.ppy);
 
-cv::Mat camera_matrix = (cv::Mat_<float>(3, 3) <<      fx, 0,  cx,
-                                                                                                0,  fy, cy,
-                                                                                                0,  0,  1);
+cv::Mat camera_matrix = (cv::Mat_<float>(3, 3) <<   fx, 0,  cx,
+                                                                                                        0,  fy, cy,
+                                                                                                        0,  0,  1);
 
 // intrinsics.coeffs[0~4] == 0
 cv::Mat distortion_coeffs = (cv::Mat_<float>(1, 5) << 0, 0, 0, 0, 0);
 ```
-- `intrinsics.coeffs` 是一个长度为5的数组，我测试后发现里面的数据都是 `0`
+- `intrinsics.coeffs` 是一个长度为5的数组，测试后发现里面的数据都是 `0`
 
 获取相机内参之后就可以使用求解器进行姿态估计了
 
@@ -75,13 +75,13 @@ cv::Mat tvec = cv::Mat::zeros(3, 1, CV_64FC1);
 vector<cv::Point3f> object_point;
 vector<cv::Point2f> image_point;
 
-const float tag_size = 100; // mm
+const float tag_size = 100; // mm apriltag 的尺寸
 
 object_point.clear();
-object_point.push_back(cv::Point3f(-tag_size, -tag_size, 0));
-object_point.push_back(cv::Point3f(tag_size, -tag_size, 0));
-object_point.push_back(cv::Point3f(tag_size, tag_size, 0));
-object_point.push_back(cv::Point3f(-tag_size, tag_size, 0));
+object_point.push_back(cv::Point3f(-tag_size / 2, -tag_size / 2, 0));
+object_point.push_back(cv::Point3f(tag_size / 2, -tag_size / 2, 0));
+object_point.push_back(cv::Point3f(tag_size / 2, tag_size / 2, 0));
+object_point.push_back(cv::Point3f(-tag_size / 2, tag_size / 2, 0));
 
 apriltag_detection_t *det; // apriltag 的检测结果
 
@@ -94,6 +94,14 @@ image_point.push_back(cv::Point2d(det->p[3][0], det->p[3][1]));
 cv::solvePnP(object_point, image_point, camera_matrix, distortion_coeffs, rvec, tvec, cv::SOLVEPNP_IPPE_SQUARE);
 ```
 
+通过求解器就得到了能将世界坐标系下的点转换至图像坐标的旋转向量 `rvec` 以及平移向量 `tvec`
+- 使用 `cv::SOLVEPNP_IPPE_SQUARE` 的求解方式，用于共面对象点的平面姿态估计，世界坐标的原点应该设置在对象平面的中心，Z 轴向上
+  - **[Perspective-n-Point (PnP) pose computation](https://docs.opencv.org/4.x/d5/d1f/calib3d_solvePnP.html)**
+
+求解结果
+
+![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/ubuntu/realsense/realsense-apriltag-pose.png)
+
 ## 参考
 - **[D435i use apriltag with OpenCV](https://sinnammanyo.cn/personal-site/docs/computer/cv/realsense/intel-realsense-apriltag)**
 - **[相机内参和外参](https://zhuanlan.zhihu.com/p/144307108)**
@@ -102,5 +110,6 @@ cv::solvePnP(object_point, image_point, camera_matrix, distortion_coeffs, rvec, 
 - **https://github.com/IntelRealSense/librealsense/blob/5e73f7bb906a3cbec8ae43e888f182cc56c18692/examples/sensor-control/api_how_to.h#L209**
 - **[Get Video Stream Intrinsics](https://github.com/IntelRealSense/librealsense/wiki/API-How-To#get-video-stream-intrinsics)**
 - **[Apriltag使用](https://blog.csdn.net/u010949023/article/details/116597057)**
+- **[Perspective-n-Point (PnP) pose computation](https://docs.opencv.org/4.x/d5/d1f/calib3d_solvePnP.html)**
 
 

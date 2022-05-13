@@ -38,4 +38,4 @@ cv::Mat image(Size(w, h), CV_8UC3, const_cast<void*>(depth.get_data()), cv::Mat:
 - **[产品手册](https://www.intelrealsense.com/wp-content/uploads/2020/06/Intel-RealSense-D400-Series-Datasheet-June-2020.pdf)**
 - **[GitHub--IntelRealSense/librealsense](https://github.com/IntelRealSense/librealsense)**
 - **[Linux Distribution](https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md)**
-- **[`rs-imshow.cpp`](https://github.com/IntelRealSense/librealsense/blob/master/wrappers/opencv/imshow/rs-imshow.cpp)**
+- **[rs-imshow.cpp](https://github.com/IntelRealSense/librealsense/blob/master/wrappers/opencv/imshow/rs-imshow.cpp)**

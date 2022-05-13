@@ -67,18 +67,11 @@ zarray_t *detections = apriltag_detector_detect(td, &img_header);
 for(int i = 0; i < zarray_size(detections); ++i){
     apriltag_detection_t *det;
     zarray_get(detections, i, &det);
-    line(color_img, cv::Point(static_cast<int>(det->p[0][0]), static_cast<int>(det->p[0][1])),
-                cv::Point(static_cast<int>(det->p[1][0]), static_cast<int>(det->p[1][1])),
-                cv::Scalar(0, 0xff, 0), 2);
-    line(color_img, cv::Point(static_cast<int>(det->p[0][0]), static_cast<int>(det->p[0][1])),
-                cv::Point(static_cast<int>(det->p[3][0]), static_cast<int>(det->p[3][1])),
-                cv::Scalar(0, 0, 0xff), 2);
-    line(color_img, cv::Point(static_cast<int>(det->p[1][0]), static_cast<int>(det->p[1][1])),
-                cv::Point(static_cast<int>(det->p[2][0]), static_cast<int>(det->p[2][1])),
-                cv::Scalar(0xff, 0, 0), 2);
-    line(color_img, cv::Point(static_cast<int>(det->p[2][0]), static_cast<int>(det->p[2][1])),
-                cv::Point(static_cast<int>(det->p[3][0]), static_cast<int>(det->p[3][1])),
-                cv::Scalar(0xff, 0, 0), 2);
+    for(size_t i = 0; i < 4; ++i){
+        cv::line(color_img, cv::Point(static_cast<int>(det->p[i][0]), static_cast<int>(det->p[i][1])),
+                cv::Point(static_cast<int>(det->p[(i+1)%4][0]), static_cast<int>(det->p[(i+1)%4][1])),
+                cv::Scalar(0xff, 0xff, 0), 2);
+    }
 
     stringstream ss;
     ss << det->id;
