@@ -288,9 +288,9 @@ module.exports = {
           label: "常用方法",
           collapsed: true,
           items: [
-            'computer/cv/opencv/opencv-waitKey',
-            'computer/cv/opencv/opencv-roi',
-            'computer/cv/opencv/opencv-hough-transform',
+            'computer/cv/opencv/common-method/opencv-waitKey',
+            'computer/cv/opencv/common-method/opencv-roi',
+            'computer/cv/opencv/common-method/opencv-hough-transform',
           ],
         },
         {
@@ -298,7 +298,8 @@ module.exports = {
           label: "OpenCV tutorials",
           collapsed: true,
           items: [
-              'computer/cv/opencv/opencv-equalizeHist',
+              'computer/cv/opencv/tutorials/opencv-equalizeHist',
+              'computer/cv/opencv/tutorials/opencv-solvePnP-pose-computation',
           ],
         },
         {

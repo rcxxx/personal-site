@@ -1,7 +1,7 @@
 ---
 id: opencv-lane-detect
 title: OpenCV 实现简单车道线检测
-sidebar_label: 图像处理方法
+sidebar_label: 车道线检测
 ---
 
 ## 读取图像

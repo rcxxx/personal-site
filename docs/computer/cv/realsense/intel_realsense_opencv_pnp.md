@@ -5,6 +5,9 @@ sidebar_label: apriltag Pose Estimation
 ---
 
 ## 使用 apriltag 标签进行姿态估计
+
+![](https://pictures-1304295136.cos.ap-guangzhou.myqcloud.com/screenshot/ubuntu/realsense/realsense-apriltag-pose.png)
+
 `apriltag` 检测
 
 - **[D435i use apriltag with OpenCV](https://sinnammanyo.cn/personal-site/docs/computer/cv/realsense/intel-realsense-apriltag)**
