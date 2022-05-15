@@ -98,7 +98,7 @@ $$
 x \\
 y \\
 z 
-\end{bmatrix} = R^{-1}(M_{camera} * S * 
+\end{bmatrix} = R^{-1}(M_{camera}^{-1} * S * 
 \begin{bmatrix}
 u \\
 v \\
@@ -182,9 +182,10 @@ cv::Mat M_1, M_2;
 double S, z_const = 0;
 M_1 = rotation_matrix.inv() * camera_matrix.inv() * uv_pt;  // M_1
 M_2 = rotation_matrix.inv() * tvec;                         // M_2
+/* S = (z_const + M_2[2]) / M_1[2] */
 S = z_const + M_2.at<double>(2,0);
 S /= M_1.at<double>(2,0);
-/* S = (z_const + M_2.at<double>(2,0)) / M_1.at<double>(2,0) */
+
 
 /* world_pt = R^{-1}(M_{camera}^{-1} * S * uv_pt - t) */
 cv::Mat world_pt = rotation_matrix.inv() * (S * camera_matrix.inv() * uv_pt - tvec);
