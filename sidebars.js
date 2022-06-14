@@ -589,6 +589,30 @@ module.exports = {
   '🖥️PC': [
     {
       type: 'category',
+      label: "system",
+      link: {
+        type: 'generated-index',
+        slug: '/category/devices',
+      },
+      collapsed: true,
+      items: [
+        {
+          type: "category",
+          label: "Ubuntu",
+          collapsed: true,
+          items: [
+            'computer/pc/system/linux/ubuntu/try-ubuntu-fix-grub',
+            'computer/pc/system/linux/ubuntu/ubuntu-18-04-obs',
+            'computer/pc/system/linux/ubuntu/ubuntu-18-04-starting-script',
+            'computer/pc/system/linux/ubuntu/ubuntu-18-04-script-sudo',
+            'computer/pc/system/linux/ubuntu/ubuntu-18-04-tweaks',
+            // 'computer/pc/system/linux/ubuntu/',
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
       label: "devices",
       link: {
         type: 'generated-index',
