@@ -17,20 +17,25 @@ module.exports = {
         defaultMode: 'light',
         disableSwitch: false,
         respectPrefersColorScheme: true,
-        switchConfig: {
-          darkIcon: '🌑️',
-          lightIcon: '🌞',
-          // React inline style object
-          // see https://reactjs.org/docs/dom-elements.html#style
-          darkIconStyle: {
-            marginLeft: '2px',
-          },
-          lightIconStyle: {
-            marginLeft: '1px',
-          },
+        // switchConfig: {
+        //   darkIcon: '🌑️',
+        //   lightIcon: '🌞',
+        //   // React inline style object
+        //   // see https://reactjs.org/docs/dom-elements.html#style
+        //   darkIconStyle: {
+        //     marginLeft: '2px',
+        //   },
+        //   lightIconStyle: {
+        //     marginLeft: '1px',
+        //   },
+        // },
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
         },
       },
-      hideableSidebar: true,
       navbar: {
         hideOnScroll: true, // 自动隐藏导航栏
         logo: {

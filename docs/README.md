@@ -7,7 +7,7 @@ slug: /
 
 ---
 
-:::info ![](../../personal-site/static/img/pixel/像素_武器.svg) ![](../../personal-site/static/img/pixel/像素_游戏机.svg) 
+:::info ![](../static/img/pixel/像素_武器.svg) ![](../static/img/pixel/像素_游戏机.svg) 
 希望我的内容能对你有所帮助
 :::
 
