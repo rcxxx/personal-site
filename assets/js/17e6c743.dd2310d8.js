@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs_website=self.webpackChunkdocs_website||[]).push([[8051],{3903:function(e){e.exports=JSON.parse('{"title":"devices","slug":"/category/devices","permalink":"/personal-site/docs/category/devices","navigation":{"next":{"title":"Jetson Nano Start","permalink":"/personal-site/docs/computer/pc/devices/nvidia/jeston-nano/jetson-nano-start"}}}')}}]);
