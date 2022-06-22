@@ -477,6 +477,18 @@ module.exports = {
         },
       ],
     },
+    {
+        type: 'category',
+        label: 'ROS2',
+        link: {
+          type: 'generated-index',
+          slug: '/category/ROS2',
+        },
+        collapsed: true,
+        items: [
+          'computer/robot/ros2/ros2-install',
+        ],
+      },
     // RC & RM
     {
       type: 'category',
