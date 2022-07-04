@@ -1,7 +1,7 @@
 ---
 id: opencv-dnn-yolov4
 title: 使用 CV::DNN 模块读取 YOLO v4 权重进行实时目标检测
-sidebar_label: DNN-YOLO v4
+sidebar_label: DNN YOLO-v4
 ---
 
 ## 准备工作

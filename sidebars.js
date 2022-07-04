@@ -309,6 +309,7 @@ module.exports = {
           collapsed: true,
           items: [
               'computer/cv/opencv/dnn/opencv-dnn-yolov4',
+              'computer/cv/opencv/dnn/opencv-dnn-yolov5-6-0',
           ],
         },
         {
@@ -605,7 +606,7 @@ module.exports = {
       label: "system",
       link: {
         type: 'generated-index',
-        slug: '/category/devices',
+        slug: '/category/ubuntu',
       },
       collapsed: true,
       items: [
