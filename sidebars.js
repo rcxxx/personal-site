@@ -280,6 +280,7 @@ module.exports = {
           items: [
             'computer/cv/opencv/opencv-install-cpu',
             'computer/cv/opencv/opencv-install-gpu',
+            'computer/cv/opencv/opencv-build-cfg',
           ],
         },
         'computer/cv/opencv/opencv-pixel-connect',

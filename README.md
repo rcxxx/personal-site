@@ -10,17 +10,21 @@
 - [nodejs下载](https://nodejs.org/en/download/)
 
 ``` shell
+sudo mkdir /usr/local/lib/nodejs
 sudo tar -xJvf node-$VERSION-$DISTRO.tar.xz -C /usr/local/lib/nodejs
-sudo ln -s /usr/local/lib/nodejs/bin/node /usr/local/bin/node
-sudo ln -s /usr/local/lib/nodejs/bin/npm /usr/local/bin/npm
-sudo ln -s /usr/local/lib/nodejs/bin/npx /usr/local/bin/npx
+sudo ln -s /usr/local/lib/nodejs/node-$VERSION-$DISTRO/bin/node /usr/local/bin/node
+sudo ln -s /usr/local/lib/nodejs/node-$VERSION-$DISTRO/bin/npm /usr/local/bin/npm
+sudo ln -s /usr/local/lib/nodejs/node-$VERSION-$DISTRO/bin/npx /usr/local/bin/npx
 ```
 
 - [yarn下载](https://classic.yarnpkg.com/en/)
 
-``` shell
-npm install --global yarn
 ```
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt update && sudo apt install yarn
+```
+
 ## Installation
 
 ``` bash
@@ -40,6 +44,8 @@ yarn start
 
 如果想要将仓库推送到远程仓库中，可以参考 **[模板仓库](https://github.com/rcxxx/docusaurus-template)**
 
-
+## 参考
+- **[Node.js Downloads](https://nodejs.org/en/download/)**
+- **[yarn Installation](https://classic.yarnpkg.com/en/docs/install/#debian-stable)**
 
 
