@@ -380,6 +380,7 @@ module.exports = {
         'computer/cv/ml-dl/yolo/yolov5-start',
         'computer/cv/ml-dl/yolo/yolov5-train',
         'computer/cv/ml-dl/yolo/yolov5-训练自建数据集',
+        'computer/cv/ml-dl/yolov5-6.0-train'
       ],
     },
 
