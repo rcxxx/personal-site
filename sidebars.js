@@ -597,6 +597,14 @@ module.exports = {
             'studio/summary/猫粮机/Cat-food-machine-based-on-MegFLow_02',
           ],
         },
+        {
+            type: "category",
+            label: "垃圾桶",
+            collapsed: true,
+            items: [
+              'studio/summary/垃圾桶/foolish-trash-bin',
+            ],
+          },
       ],
     },
   ],

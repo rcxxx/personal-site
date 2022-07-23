@@ -9,9 +9,9 @@ import BVideo from "@site/src/components/BVideo";
 
 <BrowserWindow>
 
-### 视频演示 —— 待上传
+### 视频演示
 
-<BVideo src="" bsrc=""/>
+<BVideo src="//player.bilibili.com/player.html?aid=935429326&bvid=BV1PT4y1m7Kk&cid=479365652&page=1" bsrc="https://www.bilibili.com/video/BV1PT4y1m7Kk"/>
 
 ### 项目地址
 - [rcxxx/MegFlow —— cat_feeders](https://github.com/rcxxx/MegFlow/tree/master/flow-python/examples/cat_feeders)
