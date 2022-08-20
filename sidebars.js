@@ -544,7 +544,7 @@ module.exports = {
       },
       collapsed: true,
       items: [
-        'computer/3D-modeling/fusion360/fusion360-rack-and-pinion.md',
+        'computer/3D-modeling/fusion360/fusion360-rack-and-pinion',
       ],
     },
   ],

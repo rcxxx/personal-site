@@ -46,7 +46,7 @@ pip3 install gdown
 gdown https://drive.google.com/uc?id=1TqC6_2cwqiYacjoLhLgrZoap6-sVL2sd
 ```
 
-::: tip 💻
+:::tip 💻
 这里最好设置一下代理， **pip** 走 **socks5** 的时候会报错，装好 **gdown** 之后在设置一下，然后关掉
 :::
 

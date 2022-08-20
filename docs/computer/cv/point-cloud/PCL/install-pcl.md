@@ -27,7 +27,7 @@ sudo apt-get install libflann1.9 libflann-dev libboost-all-dev libeigen3-dev lib
 
 解压后打开终端进入目录
 
-::: info 💡
+:::info 💡
 - 编译时最好关掉 `conda` 的虚拟环境，可能出现 `xxxxxxx 未定义的引用`
 :::
 

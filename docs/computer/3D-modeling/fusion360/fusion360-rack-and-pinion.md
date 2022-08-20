@@ -1,7 +1,7 @@
 ---
 id: fusion360-rack-and-pinion
 title: ''
-sidebar_label: 齿轮 & 齿条
+sidebar_label: '齿轮 & 齿条'
 ---
 
 ## Fusion360 绘制齿轮以及齿条

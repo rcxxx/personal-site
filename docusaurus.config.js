@@ -57,7 +57,7 @@ module.exports = {
               {label: '⌨️ programming', to:'docs/category/C-C_plus_plus'},
               {label: '👀CV', to:'docs/category/OpenCV'},
               {label: '🎖️robot', to:'docs/category/RC-RM'},
-              {label: '3D Modeling', to:'docs/category/Fusion 360'},
+              {label: '🔨3D Modeling', to:'docs/category/Fusion 360'},
             ],
           },
           {
