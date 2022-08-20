@@ -532,6 +532,22 @@ module.exports = {
       ],
     },
   ],
+  
+  '3D Modeling': [
+    {
+      
+      type: "category",
+      label: "Fusion 360",
+      link: {
+        type: 'generated-index',
+        slug: '/category/Fusion 360',
+      },
+      collapsed: true,
+      items: [
+        'computer/3D-modeling/fusion360/fusion360-rack-and-pinion.md',
+      ],
+    },
+  ],
 
   'life': [
     {
