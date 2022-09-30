@@ -78,3 +78,4 @@ mouse.release(Button.left)
 ## 参考
 - **[pynput-pypi](https://pypi.org/project/pynput/)**
 - **[pynput Package Documentation](https://pynput.readthedocs.io/en/latest/)**
+- **[python监听、操作键盘鼠标库pynput详细教程](https://blog.csdn.net/u011367482/article/details/106173994)**

@@ -673,6 +673,14 @@ module.exports = {
             'computer/pc/devices/nvidia/jeston-nano/jetson-nano-megflow-megengine',
           ],
         },
+        {
+            type: "category",
+            label: "ESP32",
+            collapsed: true,
+            items: [
+              'computer/pc/devices/esp32/esp32-idf-Clion-env',
+            ],
+          },
       ],
     },
   ],
