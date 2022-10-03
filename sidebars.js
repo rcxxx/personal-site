@@ -679,6 +679,7 @@ module.exports = {
             collapsed: true,
             items: [
               'computer/pc/devices/esp32/esp32-idf-Clion-env',
+              'computer/pc/devices/esp32/esp32-demo-blink',
             ],
           },
       ],
