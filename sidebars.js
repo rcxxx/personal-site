@@ -357,14 +357,14 @@ module.exports = {
       items: [
         'computer/cv/ml-dl/pytorch/about-pytorch',
         'computer/cv/ml-dl/pytorch/pytorch-install',
-        // {
-        //   type: "category",
-        //   label: " ",
-        //   collapsed: true,
-        //   items: [
-          
-        //   ],
-        // },
+        {
+          type: "category",
+          label: "model",
+          collapsed: true,
+          items: [
+            'computer/cv/ml-dl/pytorch/pytorch-resnet'
+          ],
+        },
       ],
     },
     // YOLO
@@ -680,6 +680,7 @@ module.exports = {
             items: [
               'computer/pc/devices/esp32/esp32-idf-Clion-env',
               'computer/pc/devices/esp32/esp32-demo-blink',
+              'computer/pc/devices/esp32/esp32-CLion-flash-seria-port-permission',
             ],
           },
       ],
