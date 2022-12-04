@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs_website=self.webpackChunkdocs_website||[]).push([[2325],{58162:function(e){e.exports=JSON.parse('{"title":"OpenCV","slug":"/category/OpenCV","permalink":"/personal-site/docs/category/OpenCV","navigation":{"next":{"title":"\u7b80\u5355\u4e86\u89e3","permalink":"/personal-site/docs/computer/cv/opencv/about-opencv"}}}')}}]);

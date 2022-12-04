@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs_website=self.webpackChunkdocs_website||[]).push([[3619],{99609:e=>{e.exports=JSON.parse('{"title":"system","slug":"/category/ubuntu","permalink":"/personal-site/docs/category/ubuntu","navigation":{"next":{"title":"\u4fee\u590d grub \u5f15\u5bfc","permalink":"/personal-site/docs/computer/pc/system/linux/ubuntu/try-ubuntu-fix-grub"}}}')}}]);
