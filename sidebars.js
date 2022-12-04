@@ -362,7 +362,7 @@ module.exports = {
           label: "model",
           collapsed: true,
           items: [
-            'computer/cv/ml-dl/pytorch/pytorch-resnet'
+            'computer/cv/ml-dl/pytorch/pytorch-resnet',
           ],
         },
       ],
